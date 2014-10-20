@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title></title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/business-casual.css" rel="stylesheet">
+<!-- jquery slider -->
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<style type="text/css">
+.others {
+	border-bottom: 1px solid #c2c7cc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.content_area {
+	border-right: 1px solid #c2c7cc;
+}
+
+.others_nl {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.sortlist {
+	background: none repeat scroll 0 0 #edf0f2;
+	clear: both;
+	height: 30px;
+	margin-top: 17px;
+}
+
+.ordertab {
+	background: none repeat scroll 0 0 #fff;
+	display: block;
+	float: left;
+}
+
+.ordertab a.newOn {
+	background: url("images/orderTab.png") no-repeat scroll 0 0
+		rgba(0, 0, 0, 0);
+}
+
+.ordertab a.newOn, .ordertab a.hotOn {
+	color: transparent;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -200em;
+	width: 60px;
+}
+
+.ordertab a {
+	background: none repeat scroll 0 0 #edf0f2;
+	float: left;
+	line-height: 30px;
+	margin-right: 2px;
+	text-align: center;
+	width: 60px;
+}
+
+a:link, a:visited {
+	color: #5e5e5e;
+}
+
+:link, *:visited, ins {
+	text-decoration: none;
+}
+
+a, input, button {
+	outline: medium none;
+}
+
+a {
+	outline: medium none;
+}
+
+.answertabcon {
+	clear: both;
+}
+
+.ques-list {
+	padding: 10px 0;
+}
+
+.answerlist, .qareply-detail {
+	border-bottom: 1px solid #eee;
+}
+
+.answerlist {
+	border-bottom: 1px solid #c7c7c7;
+	clear: both;
+	overflow: hidden;
+	padding: 16px 0 12px;
+	position: relative;
+}
+
+.queHead {
+	border-radius: 20px;
+	display: block;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 40px;
+}
+
+.queslist {
+	width: 600px;
+}
+
+.l {
+	float: left;
+}
+
+.finaltime {
+	color: #b4bbbf;
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 20px;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+}
+</style>
+<!-- Fonts 
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	-->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation"
+		style="color: black; background: -webkit-linear-gradient(white, #EAEAEF); background: -o-linear-gradient(white, #EAEAEF); background: -moz-linear-gradient(white, #EAEAEF); background: linear-gradient(white, #EAEAEF);">
+		<div id="brand-bar2" style="color: black;">
+			<span class="glyphicon glyphicon-thumbs-up navbar-left"
+				style="font-size: 26px; font-weight: 700;">startup.com
+				在线创业教育平台</span> <span class="navbar-right"><a href="#">&nbsp;注册会员&nbsp;</a></span>
+			<span class="navbar-right"><a href="#">&nbsp;会员资源&nbsp;</a></span>
+		</div>
+		<!-- <div class="address-bar">在线创业教育平台-一个帮你创业的平台，指导你创业的在线导师</div>		-->
+		<div id="brand-bar2"
+			style="color: white; border-top: 1px solid #EAEAEF;">
+			<button class="btn btn-default dropdown-toggle navbar-left"
+				type="button" id="dropdownMenu1" data-toggle="dropdown"
+				style="margin-right: 50px; margin-top: 8px;">
+				<span class="glyphicon glyphicon-th-list"> &nbsp;所有课程</span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程1</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程2</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程3</a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程4</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程1</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程2</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程3</a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程4</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程1</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程2</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">创业课程3</a></li>
+				<li role="presentation" class="divider"></li>
+			</ul>
+
+			<button type="button" class="btn btn-default navbar-right navbar-btn"
+				style="margin-left: 20px;">&nbsp;注册&nbsp;</button>
+			<button type="button" class="btn btn-default navbar-right navbar-btn">登录</button>
+
+			<button type="button" class="btn btn-default navbar-right navbar-btn"
+				style="margin-right: 20px;">显示登陆当前信息</button>
+
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" style="width: 500px"
+						placeholder="搜索课程，老师，作业...">
+				</div>
+				<button type="submit" class="btn btn-default">搜索</button>
+			</form>
+		</div>
+		<!-- <p class="navbar-text navbar-center"><a href="#" class="navbar-link">登录</a></p> -->
+	</nav>
+	<!-- Navigation -->
+
+	<nav class="navbar navbar-default" role="navigation"
+		style="margin-top: -20px; background-color: black; background: -webkit-linear-gradient(#EAEAEF, black); background: -o-linear-gradient(#EAEAEF, black); background: -moz-linear-gradient(#EAEAEF, black); background: linear-gradient(#EAEAEF, black); box-shadow: 10px 10px 5px #888888">
+		<div class="container" style="height: auto; color: black;">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" style="color: black;"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html"
+						style="color: white; font-weight: 700;">首页</a></li>
+					<li><a href="about.html"
+						style="color: white; font-weight: 700;">关于我们</a></li>
+					<li><a href="news.html"
+						style="color: white; font-weight: 700;">我们的新闻</a></li>
+					<li><a href="contact.html"
+						style="color: white; font-weight: 700;">联系我们 </a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+
+	<!-- <nav class="navbar navbar-inverse" role="navigation">
+		<img class="img-full" src="img/slide-1.jpg" width="100%" height="80px;" alt="这里是我们的广告条"/>
+	</nav> -->
+
+
+	<div class="container">
+		<div class="row others_nl">
+			<div class="col-md-12">
+				<h4>
+					创业课程 <small>架构之路——穿行在产品和业务之间</small>
+				</h4>
+			</div>
+			<div class="col-md-2">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						id="dropdownMenu1" data-toggle="dropdown">
+						课程列表 <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu"
+						aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">Action</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">Another action</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">Something else here</a></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div id="playerContainer"></div>
+				<div id="imgPreload" style="display: none"></div>
+			</div>
+			<div class="col-md-5">
+				<div id="slideContainer">
+					<img src="resources/wlf-architecture-road/zh/slides/wlf.1.jpg"
+						class="img-responsive img-rounded" />
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="row others_nl">
+			<span class="l">分享：</span>
+			<div class="bdsharebuttonbox">
+				<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+					class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#"
+					class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#"
+					class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#"
+					class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#"
+					class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+			</div>
+			<script>
+				window._bd_share_config = {
+					"common" : {
+						"bdSnsKey" : {},
+						"bdText" : "",
+						"bdMini" : "2",
+						"bdMiniList" : false,
+						"bdPic" : "",
+						"bdStyle" : "1",
+						"bdSize" : "16"
+					},
+					"share" : {}
+				};
+				with (document)
+					0[(getElementsByTagName('head')[0] || body)
+							.appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='
+							+ ~(-new Date() / 36e5)];
+			</script>
+		</div>
+		<div class="row others">
+			<div class="col-md-9 content_area">
+				<ul class="nav nav-tabs nav-justified" role="tablist" id="play_tab">
+					<li role="presentation" class="active"><a href="#comment"
+						role="tab" data-toggle="tab">评论</a></li>
+					<li role="presentation"><a href="#note" role="tab"
+						data-toggle="tab">笔记</a></li>
+					<li role="presentation"><a href="#homework" role="tab"
+						data-toggle="tab">作业</a></li>
+					<li role="presentation"><a href="#faq" role="tab"
+						data-toggle="tab">FAQ</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="comment">
+						<form role="form" class="others_nl">
+							<div class="form-group">
+								<label for="comment_l">欢迎讨论：</label>
+								<textarea class="form-control" id="comment_m"
+									placeholder="三人行必有吾师"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default">讨论</button>
+						</form>
+
+						<div id="qaLoadListData">
+
+							<div class="sortlist">
+								<div class="ordertab">
+									<a class="newOn" data-order="last" hidefocus="true"
+										href="javascript:void(0)">最新</a> <a class="" data-order="pop"
+										hidefocus="true" href="javascript:void(0)">热门</a>
+								</div>
+							</div>
+							<div class="answertabcon">
+								<div data-qid="41567" class="answerlist ques-list">
+									<a title="oldfu" target="_blank" class="queHead l"
+										href="/space/u/uid/117093"> <img width="40" height="40"
+										src="http://img.mukewang.com/user/5372c77b0001a4e001000100-80-80.jpg">
+									</a>
+									<div class="queslist l">
+										<span><a title="oldfu" target="_blank"
+											href="/space/u/uid/117093">oldfu </a></span>
+										<p id="41567">
+											<a target="_blank" href="/qadetail/41567">前端发布系统能不能再讲点详细的！不要总是点到为止。</a>
+										</p>
+										<div class="finaltime">
+											<span>最后回复：3天前</span> <a target="_blank"
+												href="/qadetail/41567"><span class="replyDetail"><em
+													class="replaynum"></em>回复<b id="J_ReplyNum">1</b></span></a>
+										</div>
+									</div>
+								</div>
+								<div data-qid="41195" class="answerlist ques-list">
+									<a title="柠檬su" target="_blank" class="queHead l"
+										href="/space/u/uid/194767"> <img width="40" height="40"
+										src="http://img.mukewang.com/user/533e4d660001312002000200-80-80.jpg">
+									</a>
+									<div class="queslist l">
+										<span><a title="柠檬su" target="_blank"
+											href="/space/u/uid/194767">柠檬su </a></span>
+										<p id="41195">
+											<a target="_blank" href="/qadetail/41195">代码上传到服务器，服务器返回一个路径，用这个路径去替换原来项目中的路径（适用于简单的项目）...</a>
+										</p>
+										<div class="answercon">
+											<span id="ansmallPic" class="answerImg ansmallPic"><img
+												width="156" height="88"
+												src="http://img.mukewang.com/543dfb330001384b10000530-156-88.jpg"><span
+												class="intertime playtime_AS"><a target="_blank"
+													title="回放视频" href="/video/3489/196">03:16</a></span></span><span
+												style="display: none;" id="anbigPic"
+												class="answerImg anbigPic"><img width="500"
+												height="284"
+												src="http://img.mukewang.com/543dfb330001384b10000530-500-284.jpg"><span
+												class="intertime playtime_AS"><a target="_blank"
+													title="回放视频" href="/video/3489/196">03:16</a></span></span>
+										</div>
+										<div class="finaltime">
+											<span>发布时间：5天前</span> <a target="_blank"
+												href="/qadetail/41195"><span class="replyDetail"><em
+													class="replaynum"></em>回复<b id="J_ReplyNum">0</b></span></a>
+										</div>
+									</div>
+								</div>
+								<div data-qid="41172" class="answerlist ques-list">
+									<a title="我是谁" target="_blank" class="queHead l"
+										href="/space/u/uid/447356"> <img width="40" height="40"
+										src="http://img.mukewang.com/user/543de40e00010b2401000100-80-80.jpg">
+									</a>
+									<div class="queslist l">
+										<span><a title="我是谁" target="_blank"
+											href="/space/u/uid/447356">我是谁 </a></span>
+										<p id="41172">
+											<a target="_blank" href="/qadetail/41172">我</a>
+										</p>
+										<div class="answercon">
+											<span id="ansmallPic" class="answerImg ansmallPic"><img
+												width="156" height="88"
+												src="http://img.mukewang.com/543de6550001283b07180404-156-88.jpg"><span
+												class="intertime playtime_AS"><a target="_blank"
+													title="回放视频" href="/video/3489/141">02:21</a></span></span><span
+												style="display: none;" id="anbigPic"
+												class="answerImg anbigPic"><img width="500"
+												height="284"
+												src="http://img.mukewang.com/543de6550001283b07180404-500-284.jpg"><span
+												class="intertime playtime_AS"><a target="_blank"
+													title="回放视频" href="/video/3489/141">02:21</a></span></span>
+										</div>
+										<div class="finaltime">
+											<span>发布时间：5天前</span> <a target="_blank"
+												href="/qadetail/41172"><span class="replyDetail"><em
+													class="replaynum"></em>回复<b id="J_ReplyNum">0</b></span></a>
+										</div>
+									</div>
+								</div>
+								<div data-qid="38005" class="answerlist ques-list">
+									<a title="frans" target="_blank" class="queHead l"
+										href="/space/u/uid/351848"> <img width="40" height="40"
+										src="http://img.mukewang.com/user/5333a0f60001eaa802200220-80-80.jpg">
+									</a>
+									<div class="queslist l">
+										<span><a title="frans" target="_blank"
+											href="/space/u/uid/351848">frans </a></span>
+										<p id="38005">
+											<a target="_blank" href="/qadetail/38005">前端发布系统 是做什么的？
+												&nbsp;做了什么？</a>
+										</p>
+										<div class="finaltime">
+											<span>最后回复：2014-10-11</span> <a target="_blank"
+												href="/qadetail/38005"><span class="replyDetail"><em
+													class="replaynum"></em>回复<b id="J_ReplyNum">1</b></span></a>
+										</div>
+									</div>
+								</div>
+								<div data-qid="29436" class="answerlist ques-list">
+									<a title="蚊子漫布" target="_blank" class="queHead l"
+										href="/space/u/uid/165249"> <img width="40" height="40"
+										src="http://img.mukewang.com/user/538d3a940001803801800180-80-80.jpg">
+									</a>
+									<div class="queslist l">
+										<span><a title="蚊子漫布" target="_blank"
+											href="/space/u/uid/165249">蚊子漫布 </a></span>
+										<p id="29436">
+											<a target="_blank" href="/qadetail/29436">前端做好的页面不是要直接提供给后台开发人员吗？前端发布是个什么概念呢？？不太明白，为什么要这样发布呢？...</a>
+										</p>
+										<div class="finaltime">
+											<span>最后回复：2014-10-09</span> <a target="_blank"
+												href="/qadetail/29436"><span class="replyDetail"><em
+													class="replaynum"></em>回复<b id="J_ReplyNum">3</b></span></a>
+										</div>
+									</div>
+								</div>
+								<div data-qid="28468" class="answerlist ques-list">
+									<a title="Gop" target="_blank" class="queHead l"
+										href="/space/u/uid/234544"> <img width="40" height="40"
+										src="http://img.mukewang.com/user/5333a0600001f9ed02000200-80-80.jpg">
+									</a>
+									<div class="queslist l">
+										<span><a title="Gop" target="_blank"
+											href="/space/u/uid/234544">Gop </a></span>
+										<p id="28468">
+											<a target="_blank" href="/qadetail/28468">这种网站设计图是用什么软件制作的呢？我觉得这个很好的，我还不会。</a>
+										</p>
+										<div class="finaltime">
+											<span>发布时间：2014-09-12</span> <a target="_blank"
+												href="/qadetail/28468"><span class="replyDetail"><em
+													class="replaynum"></em>回复<b id="J_ReplyNum">0</b></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="page discuss-list-page"></div>
+						</div>
+
+					</div>
+					<div class="tab-pane" id="note">
+						<form role="form">
+							<div class="form-group">
+								<label for="note_l">好记性不如烂笔头：</label>
+								<textarea class="form-control" id="note_m" placeholder="记录笔记"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default">笔记</button>
+						</form>
+					</div>
+					<div class="tab-pane" id="homework">...作业</div>
+					<div class="tab-pane" id="faq">...FAQ</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<p>在线交流</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p>课程介绍，，，</p>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>Copyright &copy; www.startup.com 2014</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="ckplayer/ckplayer.js"
+		charset="utf-8"></script>
+	<script type="text/javascript" src="js/PlayerPresentation.js"
+		charset="utf-8"></script>
+	<!-- Script to Activate the Carousel -->
+	<script>
+		$(document).ready(function() {
+			$('.bxslider').bxSlider({
+				minSlides : 2,
+				maxSlides : 4,
+				slideWidth : 275,
+				slideMargin : 20,
+				/* ticker: true speed: 10000,*/
+				auto : true,
+				autoControls : true
+			});
+			$('#play_tab a').click(function(e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+
+		});
+	</script>
+	<script type="text/javascript">
+		var slides = new Array(
+				'resources/wlf-architecture-road/zh/slides/wlf.1.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.2.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.3.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.4.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.5.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.6.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.7.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.8.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.9.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.10.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.11.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.12.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.13.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.14.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.15.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.16.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.17.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.18.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.19.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.20.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.21.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.22.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.23.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.24.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.25.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.26.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.27.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.28.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.29.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.30.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.31.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.32.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.33.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.34.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.35.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.36.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.37.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.38.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.39.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.40.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.41.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.42.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.43.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.44.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.45.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.46.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.47.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.48.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.49.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.50.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.51.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.52.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.53.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.54.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.55.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.56.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.57.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.58.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.59.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.60.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.61.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.62.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.63.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.64.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.65.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.66.jpg'), TIMES = new Array(
+				0, 40, 80, 90, 100, 130, 150, 160, 170, 180, 190, 210, 230,
+				240, 260, 290, 320, 340, 350, 370, 440, 460, 470, 480, 500,
+				510, 570, 620, 640, 660, 680, 700, 720, 740, 760, 770, 800,
+				830, 880, 890, 895, 900, 905, 910, 915, 930, 960, 970, 990,
+				1010, 1025, 1040, 1050, 1200, 1210, 1250, 1360, 1480, 1740,
+				1830, 1850, 1890, 1930, 1990, 2070, 2110, 2115)
+		init('ckplayer_a1');
+
+		var flashvars = {
+			f : 'resources/infoq_1.flv',
+			c : 0,
+			p : 2,
+			o : 138,
+			t : '10|10',
+			v : 30,
+			loaded : 'loadedHandler'
+		};
+		var params = {
+			bgcolor : '#FFF',
+			allowFullScreen : true,
+			allowScriptAccess : 'always',
+			wmode : "transparent"
+		};
+		var video = [ 'resources/infoq_1.mp4->video/mp4' ];
+		CKobject.embed('ckplayer/ckplayer.swf', 'playerContainer',
+				'ckplayer_a1', '470', '350', false, flashvars, video, params);
+
+		function loadedHandler() {
+			if (CKobject.getObjectById('ckplayer_a1').getType()) {//说明使用html5播放器
+				CKobject.getObjectById('ckplayer_a1').addListener('play',
+						playHandler);
+			} else {
+				CKobject.getObjectById('ckplayer_a1').addListener('play',
+						'playHandler');
+			}
+		}
+		function removeEvent() {//删除监听事件
+			if (CKobject.getObjectById('ckplayer_a1').getType()) {//说明使用html5播放器
+				CKobject.getObjectById('ckplayer_a1').removeListener('time',
+						playHandler);
+			} else {
+				CKobject.getObjectById('ckplayer_a1').removeListener('time',
+						'playHandler');
+			}
+		}
+		function playHandler() {
+			alert("start to play");
+			SlideSynchronizer.setTimes(TIMES);
+			SlideSynchronizer.start();
+		}
+	</script>
+
+</body>
+
+</html>

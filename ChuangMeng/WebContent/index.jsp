@@ -12,7 +12,7 @@
     <div class="container">
 		<div class="row">
 				<div class="box" style="height:600px;">
-						<img class="img-responsive img-full" src="img/slide-1.jpg" alt="" style="z-index:-1;"/>
+					<div id="playerContainer"></div>
 						<p class="video-meta">
 							这里是关于食品的介绍：我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧。
 						</p>
@@ -45,7 +45,7 @@
 	
     
 	<jsp:include page="/template/footer.jsp"></jsp:include>
-	
+	<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
 	<!-- Script to Activate the Carousel -->
     <script>
     $(document).ready(function(){
@@ -59,6 +59,47 @@
 			autoControls: true
 	  });
 	});
+    var flashvars = {
+			f : 'resources/infoq_1.flv',
+			c : 0,
+			p : 2,
+			o : 138,
+			t : '10|10',
+			v : 30,
+			i : 'img/slide-1.jpg',
+			loaded : 'loadedHandler'
+		};
+		var params = {
+			bgcolor : '#FFF',
+			allowFullScreen : true,
+			allowScriptAccess : 'always',
+			wmode : "transparent"
+		};
+		var video = [ 'resources/infoq_1.mp4->video/mp4' ];
+		CKobject.embed('ckplayer/ckplayer.swf', 'playerContainer',
+				'ckplayer_a1', '1170', '560', false, flashvars, video, params);
+ 
+		function loadedHandler() {
+			if (CKobject.getObjectById('ckplayer_a1').getType()) {//说明使用html5播放器
+				CKobject.getObjectById('ckplayer_a1').addListener('play',
+						playHandler);
+			} else {
+				CKobject.getObjectById('ckplayer_a1').addListener('play',
+						'playHandler');
+			} 
+		}
+		function removeEvent() {//删除监听事件
+			if (CKobject.getObjectById('ckplayer_a1').getType()) {//说明使用html5播放器
+				CKobject.getObjectById('ckplayer_a1').removeListener('time',
+						playHandler);
+			} else {
+				CKobject.getObjectById('ckplayer_a1').removeListener('time',
+						'playHandler');
+			}
+		}
+		function playHandler() {
+			//alert("start to play");
+		}
     </script>
     
 </body>
