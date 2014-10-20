@@ -166,6 +166,39 @@ hr {
 	background: linear-gradient(white, #558c89);	
 }
 
+.ad-nav-content-bar{
+	/* border:1px double grey; */
+	width:100%;
+	padding:5px;
+	background: -webkit-linear-gradient(white, grey); 
+	background: -o-linear-gradient(white,  grey);      
+	background: -moz-linear-gradient(white,  grey);    
+	background: linear-gradient(white,  grey);
+	border-radius:15px;	
+}
+.ad-nav-content-bar .ad-text{
+	font-size:30px;
+	text-align:center;
+	color:black;
+	padding:50px;
+}
+
+.ad-nav-content-bar .register-right-div{
+	text-align:right;
+	margin:5px 40px 25px 0px;
+}
+.ad-nav-content-bar .rigister-navigator-text{
+	font-size:20px;
+	color:black;
+}
+
+.ad-nav-content-bar .register-button{
+	background:#d9853b;
+	font-size:26px;
+	color:white;
+}
+
+
 .get-start-bar .main-info {
 	float:left;
 	text-align:center;
@@ -316,8 +349,15 @@ footer p {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4492be', endColorstr='#558c89', GradientType=0);
 }
 
+#get-start-button:hover{
+	font-size:18px;
+	color:black;
+	font-weight:500;
+	text-decoration:none;
+}
+
 .em-button {
-display: inline-block;
+	display: inline-block;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
