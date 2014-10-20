@@ -1,0 +1,487 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:black;
+	/*box-shadow: 10px 10px 5px #888888;
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+	background: -webkit-linear-gradient(#558c89, #d9853b); 
+	background: -o-linear-gradient(#558c89, #d9853b);      
+	background: -moz-linear-gradient(#558c89, #d9853b);    
+	background: linear-gradient(#558c89, #d9853b);   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+		
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+#navbar-background{
+		color:black; 
+		background: -webkit-linear-gradient(white, #EAEAEF); 
+		background: -o-linear-gradient(white, #EAEAEF);      
+		background: -moz-linear-gradient(white, #EAEAEF);    
+		background: linear-gradient(white, #EAEAEF);
+	}
+
+#navigator-background{
+		margin-top:-20px;
+		background-color:black;
+		background: -webkit-linear-gradient(#EAEAEF, black); 
+		background: -o-linear-gradient(#EAEAEF, black);      
+		background: -moz-linear-gradient(#EAEAEF, black);    
+		background: linear-gradient(#EAEAEF, black);
+		box-shadow:10px 10px 5px #888888;
+	}
+	
+	
+.brand,
+.address-bar {
+	display: block;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+	margin-top: -10px;
+    margin-bottom: 0px;
+    padding: 10px 10px; 
+    background: rgba(255,255,255,0.9);
+}
+
+
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+.bottom-slide-content {
+	font-size:24px;
+	padding:40px;
+	border:2px double #558c89;
+	width:250px;
+	height:260px;
+	float:left;
+	border-radius:20px;	
+	margin-left:20px;
+	text-align:center;
+	position:relative;
+	
+	/*-webkit-transition: width 1s, height 1s, -webkit-transform 1s; 
+    transition: width 1s, height 1s, transform 1s;*/
+}
+
+/*
+.bottom-slide-content:hover {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: rotate(360deg); 
+    transform: rotate(360deg);
+}*/
+
+.get-start-bar{
+	/* border:1px double grey; */
+	width:100%;
+	padding:5px;
+	text-align:right;
+	background-color:black;
+	background: -webkit-linear-gradient(white, #558c89); 
+	background: -o-linear-gradient(white, #558c89);      
+	background: -moz-linear-gradient(white, #558c89);    
+	background: linear-gradient(white, #558c89);	
+}
+
+.get-start-bar .main-info {
+	float:left;
+	text-align:center;
+	margin-top:8px;
+	font-size:18px;
+}
+
+.get-start-bar .sub-info {
+	float:left;
+	text-align:center;
+	margin-top:12px;
+	margin-left:3px;
+	font-size:14px;
+}
+
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.video-meta {
+	padding: 20px;
+	background-color: rgb(12%,11%,9%);
+	background-color: rgba(12%,11%,9%,.8);
+	color: #fff;
+	font-family: Helvetica,Arial,sans-serif;
+	width: 235px;
+	height: 550px;
+	position: relative;
+	top: -550px;
+	/*left: 0px;*/
+	border-radius: 10px 0 0 10px;
+}
+
+#video-box {
+	height:600px;
+}
+
+.video-meta p {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 15px 0;
+}
+
+.slide-meta {
+	padding: 20px;
+	background-color: rgb(12%,11%,9%);
+	background-color: rgba(12%,11%,9%,.8);
+	color: #fff;
+	font-family: Helvetica,Arial,sans-serif;
+	width: 235px;
+	height: 331px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 10px 0 0 10px;
+}
+
+.slide-meta p {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 15px 0;
+}
+
+.slide-mask {
+	width: 940px;
+	height: 371px;
+	border-radius: 10px;
+	overflow: hidden;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+
+#brand-bar2 {
+	color: #FFF;
+	overflow: visible;
+	width: 1150px;
+	height: 50px;
+	margin: 0 auto;
+	color: #fff;
+	position: relative;
+}
+
+#brand-bar2 a{
+	color:black;
+	font-size:18px;
+	text-align:center;
+	position:relative;
+	top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	height:46px;
+}
+
+#brand-bar2-a-register {
+	color:#d9853b;
+	font-size:18px;
+	text-align:center;
+	position:relative;
+	top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	height:46px;
+}
+
+#brand-bar2-a-register:hover {
+	color:blue;
+	font-size:18px;
+	text-align:center;
+	position:relative;
+	top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	height:46px;
+}
+
+
+#brand-bar2 a:hover{
+	font-size:20px;
+	color:#d9853b;
+	border:3px solid #EAEAEF;	
+	background-color:transparent;
+	outline:-webkit-focus-ring-color auto 0px;
+}
+
+#brand-bar2 a:visited {
+	color:#000000; 
+	background-color:transparent
+}
+
+
+#get-start-button{
+	color: #fff;
+	border-color: #558c89;
+	background: -moz-linear-gradient(top,#85b4cc 0,#4492be 2%,#558c89 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#85b4cc),color-stop(2%,#4492be),color-stop(100%,#558c89));
+	background: -webkit-linear-gradient(top,#85b4cc 0,#4492be 2%,#558c89 100%);
+	background: -o-linear-gradient(top,#85b4cc 0,#4492be 2%,#558c89 100%);
+	background: #558c89 -ms-linear-gradient(top,#85b4cc 0,#4492be 2%,#558c89 100%);
+	background: #558c89 linear-gradient(top,#85b4cc 0,#4492be 2%,#558c89 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4492be', endColorstr='#558c89', GradientType=0);
+}
+
+.em-button {
+display: inline-block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 28px;
+	padding: 0 15px;
+	border: 1px solid #558c89;
+	border-radius: 3.01px;
+	margin: 5px 10px 5px 0;
+	box-shadow: 0px 1px 2px rgba(50,50,50,0.3);
+	background-color: #558c89;
+	background: -moz-linear-gradient(top,#fff 0,#fcfcfc 2%,#558c89 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(2%,#fcfcfc),color-stop(100%,#558c89));
+	background: -webkit-linear-gradient(top,#fff 0,#fcfcfc 2%,#558c89 100%);
+	background: -o-linear-gradient(top,#fff 0,#fcfcfc 2%,#558c89 100%);
+	background: #558c89 -ms-linear-gradient(top,#fff 0,#fcfcfc 2%,#558c89 100%);
+	background: #558c89 linear-gradient(top,#fff 0,#fcfcfc 2%,#558c89 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#558c89', GradientType=0);
+	color: #333;
+	font: 400 13px/28px Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: baseline;
+	cursor: pointer;
+}
+
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 15px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        line-height: normal;
+        color: #FFF;
+		overflow: visible;
+		width: 1150px;
+		height: 50px;
+		margin: 0 auto;
+		color: #fff;
+		position: relative;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #FFF;
+
+    }
+
+    .navbar {
+        display:block; 
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 35px;
+		padding-right: 35px;
+
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+		
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+/* like amazon homepage : login */ 
+.nav-button-outer .nav-button-line1, .nav-button-outer .nav-button-line2 {
+	float: left;
+	clear: both;
+	display: inline-block;
+	*display:inline: ;
+	*zoom:1: ;
+	white-space: nowrap;
+	color: black;
+	font-family: "arial","sans-serif";
+	padding-right: 11px;
+}
+
+
+.nav-button-outer .nav-button-line1 {
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	margin-top: 9px;
+}
+.nav-button-outer .nav-button-line2 {
+	line-height: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+.nav-button-outer .nav-down-arrow {
+	display: inline-block;
+	*display:inline: ;
+	*zoom:1: ;
+	border-style: solid;
+	_border-style: dashed;
+	border-width: 4px;
+	border-color: transparent;
+	border-top: 4px solid #606060;
+	border-bottom-width: 0px;
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0;
+	margin: 0 0 2px 5px;
+	visibility: hidden;
+}
+.nav-menu-active.nav-button-outer .nav-down-arrow {
+	visibility: visible;
+}
+
+.nav_a, .nav_a:link, .nav_a:visited{
+text-decoration:none
+}
