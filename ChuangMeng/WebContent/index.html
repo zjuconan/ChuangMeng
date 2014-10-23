@@ -25,6 +25,9 @@
 	<script src="js/jquery.bxslider.min.js"></script>
 	<!-- bxSlider CSS file -->
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<!-- one page scroll -->
+	<script src="js/jquery.onepage-scroll.js" type="text/javascript"> </script>
+	<link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -40,140 +43,265 @@
 </head>
 
 <body>
-		<nav class="navbar navbar-default" id="navbar-background" role="navigation">
-			 <div id="brand-bar2" style="color:black;">
-			 <span class="glyphicon glyphicon-thumbs-up navbar-left" style="font-size:26px;font-weight: 700;">startup.com 在线创业教育平台</span>
-			 <span class="navbar-right"><a href="#">会员礼品</a></span>
-			 <span class="navbar-right"><a href="#" >会员资源</a></span>
-			 </div>
-			 <!-- <div class="address-bar">在线创业教育平台-一个帮你创业的平台，指导你创业的在线导师</div>		-->
-			 <div id="brand-bar2"  style="color:white;border-top:1px solid #EAEAEF;">
-				<button class="btn btn-default dropdown-toggle navbar-left" type="button" id="dropdownMenu1" data-toggle="dropdown"  style="margin-right:50px;margin-top:8px;">
-					<span class="glyphicon glyphicon-th-list"> &nbsp;所有课程</span>
-				  </button>
-				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程1</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程2</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程3</a></li>
-					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程4</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程1</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程2</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程3</a></li>
-					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程4</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程1</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程2</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程3</a></li>
-					<li role="presentation" class="divider"></li>
-				  </ul>
-				  
-				<a href="#" class="navbar-right" id="brand-bar2-a-register">
-					<span>注册</span>
-				</a>
-				
-				<a href="#" class="brand-bar2-a navbar-right">
-					<span>显示登陆当前信息</span>
-				</a>
-				
-				<a href="#" class="brand-bar2-a navbar-right">
-					<span style="font-size:12px;" >您好
-					</span><span>登录
-					</span>
-				</a>
-				<form class="navbar-form navbar-left" role="search">
-				  <div class="form-group">
-					<input type="text" class="form-control" style="width:500px" placeholder="搜索课程，老师，作业...">
+	<div id="topBar">
+		<div class="container">
+			<div class="row nav-row">
+				<div class="col-xs-5">
+					<!-- <button class="btn btn-default dropdown-toggle navbar-left" type="button" id="dropdownMenu1" data-toggle="dropdown"  style="margin-right:50px;margin-top:8px;">
+						<span class="glyphicon glyphicon-th-list"> &nbsp;所有课程</span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程1</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程2</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程3</a></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程4</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程1</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程2</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">创业课程3</a></li>
+					  </ul> -->
 				  </div>
-				  <button type="submit" class="btn btn-default">搜索</button>
-				</form>
-			</div>
-		<!-- <p class="navbar-text navbar-center"><a href="#" class="navbar-link">登录</a></p> -->
-	</nav>
-    <!-- Navigation -->
-
-    <nav class="navbar navbar-default" role="navigation" id="navigator-background">
-        <div class="container" style="height: auto;color:black;">
-              <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" style="color:black;" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html" style="color:white; font-weight: 700;">首页</a>
-                    </li>
-                    <li>
-                        <a href="about.html" style="color:white; font-weight: 700;">关于我们</a>
-                    </li>
-                    <li>
-                        <a href="news.html" style="color:white; font-weight: 700;">我们的新闻</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" style="color:white; font-weight: 700;">联系我们	</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
-	<!-- <nav class="navbar navbar-inverse" role="navigation">
-		<img class="img-full" src="img/slide-1.jpg" width="100%" height="80px;" alt="这里是我们的广告条"/>
-	</nav> -->
-
-
-    <div class="container">
-	
-			<div class="row">
-				<div class="box">
-					<div class="ad-nav-content-bar">
-						<span class="ad-text">持续的、系统的学习创业课程，完善自己的知识体系,为自己的创业做好准备！</span>
-						<br/>
-						<div class="register-right-div">
-						<span style="font-size:20px;color:black;">从这里开始：</span>
-						<button type="button" onclick="#" class="btn btn-lg register-button">成为会员</button>
-						</div>
-						
-                    </div>
+				
+				<div class="col-xs-6">	
+					<a href="#" class="brand-bar2-a navbar-right">
+						<span>我的课程</span>
+					</a>
+					
 				</div>
-			</div>
-			<br/>
-			
-			
-			<div class="row">
-					<div class="box" style="height:600px;">
-							<img class="img-responsive img-full" src="img/slide-1.jpg" alt="" style="z-index:-1;"/>
-							<p class="video-meta">
-								这里是关于食品的介绍：我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧我们来一起创业吧。
-							</p>
-                    </div>
-			</div>
-		
-			<div class="row">
-				<div class="box">
-					<div class="get-start-bar">
-						<span class="main-info"><b>尝试一下我们免费的培训课程:</b></span>
-						<span class="sub-info">每个课程都有免费的教学内容，成为会员系统的学习整个课程。</span>
-						<a href="#" class="em-button" id="get-start-button">开始学习</a>
-                    </div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="box">
-					<ul class="bxslider" style="width:100%; padding:1px;margin:0px;border:1 solid red;">
-					<li><a href="#"><img class="img-thumbnail" src="img/slide-1.jpg" alt="image01" /></a></li>
-					<li><a href="#"><img class="img-thumbnail" src="img/slide-2.jpg" alt="image01" /></a></li>
-					<li><a href="#"><img class="img-thumbnail" src="img/slide-1.jpg" alt="image01" /></a></li>
-					<li><a href="#"><img class="img-thumbnail" src="img/slide-2.jpg" alt="image01" /></a></li>
-					<li><a href="#"><img class="img-thumbnail" src="img/slide-1.jpg" alt="image01" /></a></li>
-					<li><a href="#"><img class="img-thumbnail" src="img/slide-2.jpg" alt="image01" /></a></li>
-				</ul>
-				</div>
-			</div>
+			 </div>
+		</div>
 	</div>
+	<div class="navbar navbar-default" id="navbar-background" role="navigation">
+		<div class="container">
+			<div class="row nav-row">
+				<div class="col-xs-5">
+					<a href="#" title="startup.com 在线创业教育平台">
+						<span class="glyphicon glyphicon-thumbs-up navbar-left" style="font-size:26px;font-weight: 700;color:black;padding-top:10px;">startup.com 在线创业教育平台</span>
+					<a>
+				</div>
+				<div class="col-xs-6">
+					<a href="#" class="navbar-right" id="brand-bar2-a-register">
+						<span>注册</span>
+					</a>
+					<a href="#" class="navbar-right" id="brand-bar2-a-register">
+						<span style="font-size:12px;" >您好</span>
+						<span>登录</span>
+					</a>
+					<form class="navbar-form navbar-right" role="search">
+					  <div class="form-group">
+						<input type="text" class="form-control" style="width:200px" placeholder="搜索课程，老师，作业...">
+					  </div>
+					  <button type="submit" class="btn btn-default">搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<!-- main - page1 -->
+		<section >
+			<div class="body-container" style="width=100%;margin-top:-20px;">
+				<div class="row carousel-inner">
+					<div class="homepage-main-background" style="background-image:url('img/homepageBackgroupImg.jpg');background-position:center;background-repeat:no-repeat;min-height:650px;min-width:780px;z-index: 2;background-size: cover;">
+					</div>
+					<div class="homepae-main-text" style="position:absolute;top:0;margin-top:110px; width:100%; text-align: center;color:white;">
+						<h2>最专业的指导，最敬业的老师，最优秀的平台，就在现在创业教育平台<h2>
+						<button type="submit" class="btn btn-default" style="background-color:#09f;color:white;font-size:30px;font-weight:300;padding:10px 30px;margin-top:45px;">上课了！</button>
+					</div>
+					<div class="homepage-main-bottom" style="position:absolute;bottom:0;text-align:center;padding-left:15%;padding-right:15%;width:100%;font-size:28px;font-weight:100;">
+						<div class="row>
+							<div class="course-class col-sm-2" style="float:left;padding:30px;background-color:green;width:20%;max-height:30%;">
+								创业教育1
+							</div>
+							
+							<div class="course-class col-sm-2" style="float:left;padding:30px;background-color:blue;width:20%;">
+								创业教育2
+							</div>
+							<div class="course-class col-sm-2" style="float:left;padding:30px;background-color:yellow;width:20%;">
+								创业教育3
+							</div>
+							<div class="course-class col-sm-2" style="float:left;padding:30px;background-color:grey;width:20%;">
+								创业教育4
+							</div>
+							<div class="course-class col-sm-2" style="float:left;padding:30px;background-color:red;width:20%;">
+								创业教育5
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- main - page2 -->
+		<section style="background-color:black;color:white;height:100%;">
+			<!-- Nav tabs -->
+			<div class="container">
+				<ul class="nav nav-pills" role="tablist" style="font-size:26px;font-weight:100;">
+				  <li class="active"><a href="#home" role="tab" data-toggle="tab">热门推荐课程</a></li>
+				  <li><a href="#profile" role="tab" data-toggle="tab">最受欢迎课程</a></li>
+				  <li><a href="#messages" role="tab" data-toggle="tab">最新课程</a></li>
+				</ul>
 
-	
+				<!-- Tab panes -->
+				<div class="tab-content">
+				  <div class="tab-pane active" id="home"  style="min-height:680px;">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="row">
+										 <div class="thumbnail">
+											<img alt="..." src="img/slide-3.jpg" width="70%">
+											<div class="caption">
+												<h4>创业课程1</h4>
+												<p>这个课程主要是讲述：如何创业，创业需要做什么准备。（课程描述）</p>
+												<p><a href="#" class="btn btn-primary" role="button">开始学习</a>
+												</p>
+											 </div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="thumbnail">
+											<img alt="..." src="img/pic1.jpg" width="57%">
+											<div class="caption">
+												<h4>创业课程2</h4>
+												<p>这个课程主要是讲述：如何创业，创业需要做什么准备。（课程描述）</p>
+												<p><a href="#" class="btn btn-primary" role="button">开始学习</a>
+												</p>
+											 </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">	
+									<div class="row" >
+										<div class="thumbnail">
+											<img alt="..." src="img/slide-1.jpg" width="70%">
+											<div class="caption">
+												<h4>创业课程3</h4>
+												<p>这个课程主要是讲述：如何创业，创业需要做什么准备。（课程描述）</p>
+												<p><a href="#" class="btn btn-primary" role="button">开始学习</a>
+												</p>
+											 </div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="thumbnail">
+											<img alt="..." src="img/slide-1.jpg" width="70%">
+											<div class="caption">
+												<h4>创业课程4</h4>
+												<p>这个课程主要是讲述：如何创业，创业需要做什么准备。（课程描述）</p>
+												<p><a href="#" class="btn btn-primary" role="button">开始学习</a>
+												</p>
+											 </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				  </div>
+				  <div class="tab-pane" id="profile" style="min-height:680px;">
+						<div class="row">
+								<div class="col-md-6">
+									<h1>最受欢迎课程1</h1>
+								</div>
+								<div class="col-md-6">	
+									<h1>最受欢迎课程2</h1>
+								</div>
+							</div>
+					</div>
+				  <div class="tab-pane" id="messages" style="min-height:680px;">
+					<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<h1>最新课程内容1</h1>
+								</div>
+								<div class="col-md-6">	
+									<h1>最新课程内容2</h1>
+								</div>
+							</div>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- main - page3 -->
+		<section style="background-color:white;color:black;height:100%;">
+				<div class="container">
+					<div class="row" style="text-align:center;margin:80px;">
+							<div class="col-md-12">
+								<h1>这里放老师的信息介绍或者学员信息的介绍</h1>
+							</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-5 col-sm-push-7" style="color:black;padding-top: 120px;">
+							<h2>师资力量</h2>
+							<h5>我们这里有最专业的老师，我们这里有最耐心的老师，我们的老师都是理论结合实践，富有业界丰富的经验的老师</h5>
+							<button type="submit" class="btn btn-default" style="background-color:#09f;color:black;font-size:30px;font-weight:300;padding:10px 30px;margin-top:45px;">开始上课</button>
+						</div>
+						<div class="col-sm-6 col-sm-pull-5">
+							<div class="row">
+								<div class="col-xs-3" style="margin:10px 0 10px 0;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/100.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/200.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/300.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/400.jpg">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3" style="margin:10px 0 10px 0;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/100.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/200.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/300.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/400.jpg">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3" style="margin:10px 0 10px 0;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/100.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/200.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/300.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/400.jpg">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3" style="margin:10px 0 10px 0;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/100.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/200.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/300.jpg">
+								</div>
+								<div class="col-xs-3" style="margin:0 0 20px;">
+									<img  width="100" height="100" alt="Adrian Farr" class="img-circle appeared" src="img/teacher/400.jpg">
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</section>
+	</div>	
 	
     <footer>
         <div class="container">
@@ -184,24 +312,17 @@
             </div>
         </div>
     </footer>
-
-
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $(document).ready(function(){
-	  $('.bxslider').bxSlider({
-			minSlides: 2,
-		  maxSlides: 4,
-		  slideWidth: 275,
-		  slideMargin: 20,
-		 /* ticker: true speed: 10000,*/
-		  auto: true,
-			autoControls: true
-	  });
-	});
-    </script>
-
+	
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
 </body>
 
 </html>
