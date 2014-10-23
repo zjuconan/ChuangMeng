@@ -1,0 +1,265 @@
+
+body {
+    color: #333;
+    font: 12px/1.5em "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-height: 560px;
+    min-width: 950px;
+    position: relative;
+    width: 100%;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, input, p, blockquote, th, td, form, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.wrap .wrap_line, .wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div .notes_r .button, .wrap .prev a, .wrap .returncourse a, .wrap .next a, .wrap_l .winsize a, .wrap_popup .wrap_popup_title h2, .wrap_popup .wrap_popup_c .kkn_c .kkn_r a, .wrap_popup .wrap_popup_c .kkn_c .kkn_w a, .wrap_popup .notshown div, .wrap_popup .wrap_popup_c .share_c em, .ly_main .ly_action .btn_ok, .wrap_popup .wrap_popup_c .sz_c .ly_action .btn_ok, .wrap_popup .wrap_popup_title ul.bj_title, .questionsList .questions_c .submit #sbutton, .questionsList .questions_c .study input, .questionsList .questions_b .button, .wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div .notes_l .notes_l_div span em {
+    background: url("../images/v_bg1.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div, .wrap_l .vidoelist .vidoelist_div h3, .wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div .notes_l .notes_l_div, .wrap_popup .wrap_popup_close a, .wrap_popup .wrap_popup_c .cnxhlist .c_info .flo_r .icon_a, .wrap_popup .wrap_popup_c .cnxhlist .c_info .flo_r .icon_b, .wrap_popup .wrap_popup_c .cnxhlist .c_info .study, .wrap_popup .wrap_popup_c .kcjs_c .kctag, .wrap_popup .wrap_popup_c .kcjs_c .kctag, .wrap_popup .wrap_popup_c .zlxz_c li span.xz1, .wrap_popup .wrap_popup_c .kkn_c .kkn_r span, .wrap_popup .wrap_popup_c .kkn_c .kkn_w span, .wxx_tag .add .creatag, .wrap_popup .wrap_popup_c .bj_c .scrollbox .overview ul li .biji_share .bj_share, .wrap_popup .wrap_popup_c .bj_c .bj_handle .praise, .bj_handle .praised, .questionsList .questions_c .submit .remind, .questionsList .questions_c dl dt .questions_error, .ly_main .ly_action .remind {
+    background: url("../images/v_bg2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wrap{
+	background: url("../images/wrap_bg.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 946px;
+}
+.wrap_l {
+    height: auto;
+    margin-right: 330px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+.wrap .module {
+    display: inline-block;
+    height: 85px;
+    left: 84px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 2999;
+}
+
+.wrap .module {
+    display: inline-block;
+    height: 85px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 2999;
+    left: 75.5px;
+}
+.wrap .prev {
+    cursor: pointer;
+    height: 31px;
+    left: 110px;
+    position: absolute;
+    top: 0;
+    width: 65px;
+    z-index: 999;
+}
+.wrap .prev a {
+    background-position: -14px 0;
+    display: block;
+    height: 31px;
+    width: 65px;
+}
+.wrap .prev a:hover {
+    background-position: -14px -35px;
+}
+.wrap .returncourse {
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 103px;
+    z-index: 999;
+}
+.wrap .returncourse a {
+    background-position: -84px 0;
+    display: block;
+    height: 34px;
+    width: 103px;
+}
+.wrap .returncourse a:hover {
+    background-position: -84px -38px;
+}
+
+.wrap_l .vidoe_c {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    top: 100px;
+}
+.player{
+	height: 560px;
+}
+.videobox{
+	width:45%;float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+.slide{
+	width:50%; float:right;
+	padding-right:30px;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #557917 !important;
+    text-decoration: underline;
+}
+
+.wrap_l .winsize {
+    clear: both;
+    cursor: pointer;
+    height: 43px;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    width: 26px;
+    z-index: 999;
+}
+.wrap_l .winsize a {
+    background-position: -366px 0;
+    display: block;
+    height: 43px;
+    width: 26px;
+}
+.wrap_l .winsize a:hover {
+    background-position: -396px 0;
+}
+.wrap_r {
+    background: url("../images/newplay_r_bg.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 330px;
+}
+.nav {
+    background: url("../images/newplay_nav_bg.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav_c {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 950px;
+    overflow: hidden;
+    width: 100%;
+}
+.nav_c a:hover {
+    color: #8fc223 !important;
+    text-decoration: none;
+}
+.nav_l {
+    float: left;
+    padding: 8px 0 0 20px;
+}
+.nav_l .nav_l_list a {
+    color: #999;
+    display: block;
+    float: left;
+    height: 52px;
+    line-height: 52px;
+    margin-right: 32px;
+}
+
+.nav_l .logo {
+    background: url("../images/newplay_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 44px;
+    margin: 4px 36px 0 0;
+    overflow: hidden;
+    width: 63px;
+}
+
+.nav_l .nav_l_list {
+    float: left;
+}
+
+.nav_r {
+    float: right;
+    padding: 8px 0 0;
+}
+
+.nav_r li {
+    float: left;
+    line-height: 52px;
+    margin-right: 32px;
+}
+.nav_r li a.ico_buy {
+    color: #91c031;
+}
+.nav_r li a {
+    color: #c2c2c2;
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+}
+
+element.style {
+    top: 0;
+}
+.nav_l .nav_l_list .ico_kcjs em {
+    background-position: 0 0;
+}
+.nav_l .nav_l_list a em, .nav_r li a em {
+    display: block;
+    float: left;
+    height: 18px;
+    margin: 15px 8px 0 0;
+    position: relative;
+    width: 16px;
+}
+.nav_l_list a em, .nav_r li a em {
+    background: url("../images/newplay_nav_icon.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.nav_l .nav_l_list .ico_kcjs em {
+    background-position: 0 0;
+}
+.nav_l .nav_l_list .ico_dsjs em {
+    background-position: 0 -80px;
+}
+.nav_r li a.ico_buy em {
+    background-position: 0 -810px;
+}
+.nav_r li a.ico_colle em {
+    background-position: 0 -240px;
+}
+.nav_r li a.ico_notes em {
+    background-position: 0 -320px;
+}
+.nav_r li a.ico_likes em {
+    background-position: 0 -480px;
+}
+.nav_r li a.ico_setting em {
+    background-position: 0 -640px;
+}
