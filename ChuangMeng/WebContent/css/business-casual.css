@@ -87,7 +87,7 @@ hr {
 	font-size:30px;
 	font-weight:300;
 	padding:10px 30px;
-	margin-top:45px;"
+	margin-top:45px;
 }
 
 #main-course{
@@ -112,11 +112,15 @@ float:left;padding:30px;background-color:red;width:20%;
 }
 
 .one-page-section2{
-	background-color:black;color:white;overflow: hidden;
+	background-color:black;
+	color:white;
+	overflow: hidden;
+	height:100%
 }
 
 .one-page-section3{
 	background-color:white;color:black;overflow: hidden;
+	height:100%;
 }
 	
 .brand,
@@ -368,15 +372,9 @@ footer p {
 	height:46px;
 }
 
-#brand-bar2-a-register:hover {
+#brand-bar2-a-register:hover, #brand-bar2-a-register:active{
 	color:blue;
-	font-size:18px;
-	text-align:center;
-	position:relative;
-	top:10px;
-	margin-left:20px;
-	margin-right:20px;
-	height:46px;
+	text-decoration:none;
 }
 
 
