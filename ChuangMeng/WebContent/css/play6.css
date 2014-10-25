@@ -55,6 +55,113 @@ a {
     z-index: 2999;
     left: 75.5px;
 }
+.l {
+float: left;
+}
+
+#header {
+font-family: 'Microsoft YaHei';
+background: #2a2c2e;
+height: 60px;
+}
+h1, h2, h3, h4, h5, h6 {
+font-size: 100%;
+font-weight: normal;
+font-family: "Microsoft YaHei";
+}
+.videohead {
+height: 60px;
+position: relative;
+}
+.videohead a.revert {
+display: block;
+width: 55px;
+padding-left: 15px;
+color: #fff;
+font-size: 12px;
+line-height: 60px;
+}
+.videohead a.chaptername {
+font-size: 16px;
+color: #fff;
+display: inline-block;
+line-height: 60px;
+cursor: pointer;
+height: 60px;
+position: relative;
+}
+.videohead a.chaptername span.borderstyle {
+border-left: 1px solid #404243;
+border-right: 1px solid #404243;
+}
+.videohead a.chaptername span {
+height: 40px;
+line-height: 40px;
+margin-top: 10px;
+padding: 0 17px;
+border-left: 1px solid #1f2426;
+border-right: 1px solid #1f2426;
+}
+		/* Tiny Scrollbar scrollbar1*/
+#sectionlist {position: absolute;
+	top: 60px;
+	left: 70px;
+	width: 390px;
+	height: 200px;
+	background: #1f2426;
+	z-index: 1024;}
+#scrollcont .viewport { width: 380px; height: 200px; overflow: hidden; position: relative; }
+#scrollcont .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollcont .scrollbar{ position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollcont .track { background-color: #ccc; height: 100%; width:5px; position: relative;}
+#scrollcont .thumb { background:#cc0071; height: 20px; width:5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0; }
+#scrollcont .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+#sectionlist h3 {
+height: 50px;
+line-height: 50px;
+border-bottom: 1px solid #363d40;
+font-size: 16px;
+color: #84c00b;
+padding: 0 19px;
+}
+.scrollcont {
+padding: 10px 0;
+}
+#sectionlist .detaillist {
+position: relative;
+}
+#sectionlist ul {
+height: 333px;
+overflow: hidden;
+}
+#sectionlist ul li span {
+font-size: 14px;
+color: #b4bbbf;
+padding-left: 20px;
+}
+#sectionlist .detaillist li a {
+font-size: 12px;
+color: #656e73;
+display: block;
+overflow: hidden;
+padding-left: 70px;
+word-break: break-all;
+}
+
+.video_mark {
+position: absolute;
+left: 0;
+top: 0;
+filter: alpha(opacity = 50);
+background: #000;
+opacity: 0.5;
+height: 100%;
+width: 100%;
+display: none;
+z-index: 1000;
+}
 .wrap .prev {
     cursor: pointer;
     height: 31px;
@@ -97,7 +204,7 @@ a {
     position: relative;
     width: 100%;
     z-index: 99;
-    top: 100px;
+    top: 10px;
 }
 .player{
 	height: 560px;
@@ -128,7 +235,7 @@ a:hover {
     right: 0;
     top: 42px;
     width: 26px;
-    z-index: 999;
+    z-index: 99;
 }
 .wrap_l .winsize a {
     background-position: -366px 0;
@@ -221,7 +328,7 @@ a:hover {
     position: absolute;
     text-align: center;
     width: 100%;
-    z-index: 9999;
+    z-index: 998;
 }
 .coursetitle {
     background-repeat: repeat-x;
