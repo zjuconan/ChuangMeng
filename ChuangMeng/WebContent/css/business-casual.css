@@ -95,20 +95,47 @@ position:absolute;bottom:0px;padding-left:15%;padding-right:15%;width:100%;font-
 }
 
 #course1{
-	float:left;padding:30px;background-color:green;width:20%;max-height:30%;
+	float:left;
+	padding:20px;
+	margin:5px;
+	background-color: rgba(0,255,0,0.5);
+	width:18%;
+	max-height:30%;
+	border-radius:20px;
 }
 
 #course2{
-float:left;padding:30px;background-color:blue;width:20%;
+float:left;
+padding:20px;
+margin:5px;
+background-color:rgba(0,0,255,0.5);
+width:18%;
+border-radius:20px;
+
 }
 #course3{
-float:left;padding:30px;background-color:yellow;width:20%;
+float:left;
+padding:20px;
+margin:5px;
+background-color:yellow;
+width:18%;
+border-radius:20px;
 }
 #course4{
-float:left;padding:30px;background-color:grey;width:20%;
+float:left;
+padding:20px;
+margin:5px;
+background-color:grey;
+width:18%;
+border-radius:20px;
 }
 #course5{
-float:left;padding:30px;background-color:red;width:20%;
+float:left;
+padding:20px;
+margin:5px;
+background-color: rgba(255,0,0,0.5);
+width:18%;
+border-radius:20px;
 }
 
 .one-page-section2{
