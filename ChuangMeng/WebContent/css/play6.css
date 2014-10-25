@@ -1,0 +1,655 @@
+body {
+    color: #333;
+    font: 12px/1.5em "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-width: 950px;
+    position: relative;
+    width: 100%;
+	margin: 0;
+	padding: 0;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, input, p, blockquote, th, td, form, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.wrap .wrap_line, .wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div .notes_r .button, .wrap .prev a, .wrap .returncourse a, .wrap .next a, .wrap_l .winsize a, .wrap_popup .wrap_popup_title h2, .wrap_popup .wrap_popup_c .kkn_c .kkn_r a, .wrap_popup .wrap_popup_c .kkn_c .kkn_w a, .wrap_popup .notshown div, .wrap_popup .wrap_popup_c .share_c em, .ly_main .ly_action .btn_ok, .wrap_popup .wrap_popup_c .sz_c .ly_action .btn_ok, .wrap_popup .wrap_popup_title ul.bj_title, .questionsList .questions_c .submit #sbutton, .questionsList .questions_c .study input, .questionsList .questions_b .button, .wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div .notes_l .notes_l_div span em {
+    background: url("../images/v_bg1.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div, .wrap_l .vidoelist .vidoelist_div h3, .wrap_l .vidoe_c .vidoelist .vidoelist_div .notes_div .notes_l .notes_l_div, .wrap_popup .wrap_popup_close a, .wrap_popup .wrap_popup_c .cnxhlist .c_info .flo_r .icon_a, .wrap_popup .wrap_popup_c .cnxhlist .c_info .flo_r .icon_b, .wrap_popup .wrap_popup_c .cnxhlist .c_info .study, .wrap_popup .wrap_popup_c .kcjs_c .kctag, .wrap_popup .wrap_popup_c .kcjs_c .kctag, .wrap_popup .wrap_popup_c .zlxz_c li span.xz1, .wrap_popup .wrap_popup_c .kkn_c .kkn_r span, .wrap_popup .wrap_popup_c .kkn_c .kkn_w span, .wxx_tag .add .creatag, .wrap_popup .wrap_popup_c .bj_c .scrollbox .overview ul li .biji_share .bj_share, .wrap_popup .wrap_popup_c .bj_c .bj_handle .praise, .bj_handle .praised, .questionsList .questions_c .submit .remind, .questionsList .questions_c dl dt .questions_error, .ly_main .ly_action .remind {
+    background: url("../images/v_bg2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wrap{
+	background: url("../images/wrap_bg.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    position: relative;
+    width: 100%;
+}
+.wrap_l {
+    height: auto;
+    margin-right: 330px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+.wrap .module {
+    display: inline-block;
+    height: 85px;
+    left: 84px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 2999;
+}
+
+.wrap .module {
+    display: inline-block;
+    height: 85px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 2999;
+    left: 75.5px;
+}
+.wrap .prev {
+    cursor: pointer;
+    height: 31px;
+    left: 110px;
+    position: absolute;
+    top: 0;
+    width: 65px;
+    z-index: 999;
+}
+.wrap .prev a {
+    background-position: -14px 0;
+    display: block;
+    height: 31px;
+    width: 65px;
+}
+.wrap .prev a:hover {
+    background-position: -14px -35px;
+}
+.wrap .returncourse {
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 103px;
+    z-index: 999;
+}
+.wrap .returncourse a {
+    background-position: -84px 0;
+    display: block;
+    height: 34px;
+    width: 103px;
+}
+.wrap .returncourse a:hover {
+    background-position: -84px -38px;
+}
+
+.wrap_l .vidoe_c {
+    height: 946px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    top: 100px;
+}
+.player{
+	height: 560px;
+}
+.videobox{
+	width:45%;float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+.slide{
+	width:50%; float:right;
+	padding-right:30px;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #557917 !important;
+    text-decoration: underline;
+}
+
+.wrap_l .winsize {
+    clear: both;
+    cursor: pointer;
+    height: 43px;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    width: 26px;
+    z-index: 999;
+}
+.wrap_l .winsize a {
+    background-position: -366px 0;
+    display: block;
+    height: 43px;
+    width: 26px;
+}
+.wrap_l .winsize a:hover {
+    background-position: -396px 0;
+}
+
+.content_area {
+    bottom: 10px;
+    height: auto;
+    left: 0;
+    padding: 0 20px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+      z-index: 200;
+}
+.content {
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    height: 200px;
+    margin-left: 20px;
+    max-width: 1010px;
+    position: relative;
+    text-align: left;
+    float: left;
+}
+.content p,.content h4,.content media-body{
+	color: #999;
+}
+.course-menu {
+    border-bottom: 1px solid #d1d6da;
+    height: 54px;
+    line-height: 54px;
+    margin-bottom: 20px;
+}
+.course-menu li {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+}
+.course-menu-item {
+    width: 33.33%;
+}
+.course-menu .course-menu-splitor {
+    color: #d1d6da;
+    margin-left: -1px;
+    width: 1px;
+}
+.course-menu a:hover {
+    color: #c9394a;
+    text-decoration: none;
+}
+.course-menu a {
+    color: #99a0a6;
+    display: block;
+    font-size: 16px;
+    height: 55px;
+    cursor: pointer;
+}
+.course-menu a.active {
+    border-bottom: 4px solid #c9394a;
+    color: #c9394a;
+    height: 51px;
+    text-decoration: none;
+}
+.wrap_r {
+    background: url("../images/newplay_r_bg.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 330px;
+}
+.nav {
+    background: url("../images/newplay_nav_bg.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.coursetitle {
+    background-repeat: repeat-x;
+    padding: 22px 35px 16px;
+}
+
+.coursetab {
+    height: 35px;
+    overflow: hidden;
+    width: 330px;
+}
+
+.coursetab li {
+    background: url("../images/newplay_r_bg.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    text-align: center;
+    width: 165px;
+}
+.coursetitle, .coursetab li a, .godiscuss a, .mululist dd.active a, .icon_face, .btn_faqitaolun, .btn_huifutaolun, .topic_more, .ds_bg .ds_arr, .d_discuss .ds_bg .letter_info_lt, .d_discuss .ds_bg .letter_info_rt, .d_discuss .ds_bg .letter_info_lb, .d_discuss .ds_bg .letter_info_rb, .select_box_v, .atuser em {
+    background: url("../images/newplay_r.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.coursetab li {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    overflow: hidden;
+    width: 165px;
+}
+.coursetab li a {
+    background-position: 0 -190px;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    text-align: center;
+    width: 165px;
+}
+.coursetab li a:hover {
+    background-position: 0 -240px;
+    color: #333 !important;
+    text-decoration: none;
+}
+.coursetab li.active a, .coursetab li.active a:hover {
+    background-position: 0 -150px;
+    color: #557917 !important;
+    cursor: default;
+}
+
+
+
+ol, ul, li, dd, dt, dl {
+    list-style: outside none none;
+}
+
+.coursetab li.active {
+    background-position: -170px 0;
+    color: #557917;
+    cursor: default;
+}
+#taolun_div {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.tabbox {
+    background: url("../images/newplay_r_btbg.gif") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    border-left: 1px solid #f1f1f1;
+    overflow: hidden;
+    position: relative;
+    width: 329px;
+}
+.usertopic {
+    position: relative;
+    height: 753px;
+}
+.tbox1 p, .tbox2 p, .guidearea .flo_l p {
+    word-wrap: break-word;
+}
+.usertopic_oper {
+    clear: both;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-bottom: 2px;
+    width: 329px;
+}
+.usertopic_oper, .usertopic .usertopic_list li, #scrollbar2 .usertopic_list, #scrollbar2 .usertopic_list li {
+    background: url("../images/newplay_r_line.gif") no-repeat scroll 0 bottom rgba(0, 0, 0, 0);
+}
+
+.usertopic_oper .flo_r {
+    float: right;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.usertopic_oper .flo_r a {
+    color: #999;
+}
+.wrap_r .green {
+    color: #547816 !important;
+}
+#scrollbar3 {
+    width: 329px;
+    height: 657px;
+}
+.usertopic .scrollbox {
+    clear: both;
+     height: 657px;
+}
+.scrollbox .scrollbar {
+    background: url("../images/scrollbar_trackbg_y.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    position: relative;
+    right: 6px;
+    width: 13px;
+    z-index: 5;
+}
+.scrollbox .track {
+    background: url("../images/scrollbar_trackendbg_y.gif") no-repeat scroll 0 100% rgba(0, 0, 0, 0);
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 13px;
+}
+.scrollbox .thumb {
+    background: url("../images/scrollbar_thumbbg_y.gif") no-repeat scroll 50% 100% rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 20px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 13px;
+}
+.scrollbox .thumb .end {
+    background: url("../images/scrollbar_thumbbg_y.gif") no-repeat scroll 50% 0 rgba(0, 0, 0, 0);
+    height: 5px;
+    overflow: hidden;
+    width: 13px;
+}
+#scrollbar3 .viewport {
+    width: 300px;
+}
+.scrollbox .viewport {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+.scrollbox .overview {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+.usertopic {
+    position: relative;
+    height: 753px;
+}
+.usertopic .usertopic_list li {
+    overflow: hidden;
+    padding: 9px 0 9px 13px;
+    width: 280px;
+}
+.usertopic_oper, .usertopic .usertopic_list li, #scrollbar2 .usertopic_list, #scrollbar2 .usertopic_list li {
+    background: url("../images/newplay_r_line.gif") no-repeat scroll 0 bottom rgba(0, 0, 0, 0);
+}
+.usertopic .img_l {
+    display: block;
+    float: left;
+    margin-top: 3px;
+    overflow: hidden;
+}
+.usertopic .flo_l {
+    float: left;
+    padding-left: 13px;
+    width: 215px;
+}
+.usertopic .usertopic_list li p, .usertopic .usertopic_detail .d_topic p {
+    line-height: 20px;
+}
+.usertopic .ptitle {
+    padding: 2px 0 5px;
+}
+.tbox1 p, .tbox2 p, .guidearea .flo_l p {
+    word-wrap: break-word;
+}
+.usertopic .usertopic_list li p, .usertopic .usertopic_detail .d_topic p {
+    line-height: 20px;
+}
+.usertopic .d_operat {
+    overflow: hidden;
+    padding-top: 5px;
+}
+.tbox1 p, .tbox2 p, .guidearea .flo_l p {
+    word-wrap: break-word;
+}
+
+.usertopic .reply {
+    color: #557917;
+    float: right;
+}
+.createtopic {
+    background: url("../images/newplay_r_btbg.gif") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: 32px;
+    left: 0;
+    overflow: hidden;
+    padding: 15px 15px 12px;
+    position: absolute;
+    width: 299px;
+}
+
+.expansion_box .txtwrap {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+.expansion_box .txtwrap .input_text {
+    background: url("../images/newplay_r_bg2.gif") no-repeat scroll 0 0 #fff;
+    border: 1px solid #a2a2a2;
+    color: #999;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px;
+    width: 287px;
+}
+input, select, textarea {
+    color: #333;
+    font-family: "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.expansion_box .txtwrap span {
+    border: 1px solid #a2a2a2;
+    display: none;
+    font-weight: bold;
+    height: 64px;
+    left: 0;
+    line-height: 64px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 287px;
+    z-index: 9;
+}
+
+.expansion_box .txtwrap span em {
+    background: url("http://i1.umivi.net/v/static/2013/study/images/public_ico.gif") no-repeat scroll 0 -140px rgba(0, 0, 0, 0);
+    color: #557917;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    height: 22px;
+    line-height: 20px;
+    margin: 24px 0 0 80px;
+    padding: 0 0 0 35px;
+    text-align: center;
+}
+
+.expansion_box .txtwrap span.fail {
+    color: #f35200;
+    font-size: 14px;
+    text-align: center;
+}
+.expansion_box .txtwrap span {
+    border: 1px solid #a2a2a2;
+    display: none;
+    font-weight: bold;
+    height: 64px;
+    left: 0;
+    line-height: 64px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 287px;
+    z-index: 9;
+}
+.expansion_box .txtwrap .backgroundColor {
+    background-color: #fbe2bd;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.expansion_box .expansion_btn .btn_faqitaolun {
+    background-position: 0 -405px;
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 32px;
+    line-height: 18px;
+    margin-top: 3px;
+    width: 102px;
+}
+.expansion_box .expansion_btn span.gray3 {
+    color: #666;
+    float: right;
+    line-height: 32px;
+    margin-top: 3px;
+    padding-right: 10px;
+}
+.expansion_box .expansion_btn .icon_face {
+    background-position: -120px -405px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 33px;
+    margin: 2px 10px 0 0;
+    position: relative;
+    width: 37px;
+    z-index: 999;
+}
+.backgroundColor {
+    display: none;
+}
+.nav_c {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 950px;
+    overflow: hidden;
+    width: 100%;
+}
+.nav_c a:hover {
+    color: #8fc223 !important;
+    text-decoration: none;
+}
+.nav_l {
+    float: left;
+    padding: 8px 0 0 20px;
+}
+.nav_l .nav_l_list a {
+    color: #999;
+    display: block;
+    float: left;
+    height: 52px;
+    line-height: 52px;
+    margin-right: 32px;
+}
+
+.nav_l .logo {
+    background: url("../images/newplay_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 44px;
+    margin: 4px 36px 0 0;
+    overflow: hidden;
+    width: 63px;
+}
+
+.nav_l .nav_l_list {
+    float: left;
+    font-size:13px;
+}
+
+.nav_r {
+    float: right;
+    padding: 8px 0 0;
+}
+
+.nav_r li {
+    float: left;
+    line-height: 52px;
+    margin-right: 32px;
+}
+.nav_r li a.ico_buy {
+    color: #91c031;
+}
+.nav_r li a {
+    color: #c2c2c2;
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    font-size:14px;
+}
+
+element.style {
+    top: 0;
+}
+.nav_l .nav_l_list .ico_kcjs em {
+    background-position: 0 0;
+}
+.nav_l .nav_l_list a em, .nav_r li a em {
+    display: block;
+    float: left;
+    height: 18px;
+    margin: 15px 8px 0 0;
+    position: relative;
+    width: 16px;
+}
+.nav_l_list a em, .nav_r li a em {
+    background: url("../images/newplay_nav_icon.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.nav_l .nav_l_list .ico_kcjs em {
+    background-position: 0 0;
+}
+.nav_l .nav_l_list .ico_dsjs em {
+    background-position: 0 -80px;
+}
+.nav_r li a.ico_buy em {
+    background-position: 0 -810px;
+}
+.nav_r li a.ico_colle em {
+    background-position: 0 -240px;
+}
+.nav_r li a.ico_notes em {
+    background-position: 0 -320px;
+}
+.nav_r li a.ico_likes em {
+    background-position: 0 -480px;
+}
+.nav_r li a.ico_setting em {
+    background-position: 0 -640px;
+}
+.nav_r li a.ico_faq em {
+    background-position: 0 -640px;
+}

@@ -1,0 +1,132 @@
+body{
+	background: #333;
+}
+.all{
+width: 100%;
+position: relative;
+_zoom: 1;
+background: #333;
+/* background: url(../images/wrap_bg.gif) repeat; */
+}
+
+.live-page .site-header, .live-page .cl-dark {
+background-color: #333;
+}
+
+.site-header {
+background-color: #fff;
+z-index: 1040;
+width: 100%;
+}
+.site-nav {
+min-height: 50px;
+z-index: 1030;
+letter-spacing: 1px;
+box-shadow: 0 -8px 0 0 rgba(0,0,0,.1);
+}
+.cl-icon-font {
+display: inline-block;
+font-family: cl-font-collection;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+font-style: normal;
+font-weight: 400;
+line-height: 1;
+text-decoration: inherit;
+text-rendering: optimizeLegibility;
+text-transform: none;
+font-variant: normal;
+-moz-osx-font-smoothing: grayscale;
+}
+.live-page .site-header .site-nav .nav-row a, .live-page .cl-dark .site-nav .nav-row a {
+color: #666;
+}
+.live-page .site-header .site-nav .nav-row a:hover,.live-page .cl-dark .site-nav .nav-row a:hover{color:gray}
+.site-nav .nav-row a .logo, .site-nav .nav-row a.logo {
+display: inline-block;
+color: #000;
+letter-spacing: .1em;
+}
+.margin-bottom-l, .site-nav .nav-row, .course-description .course-tagline, .course-cta-inner .course-ownership-info, .download-item, .transcripts-container .transcripts-header, .calendar-collection .course-image, .instructors-box-inner .instructor .instructor-details .instructor-headline, .instructors-box-inner .instructor .instructor-details .course-headline {
+margin-bottom: 15px;
+}
+.margin-top-l, .credentials-modal .remember-me, .site-nav .nav-row, .course-cta-inner, .sub-cta-inner, .session-title, .calendar-nav-container ul, .calendar-nav-container-mobile ul, .calendar-collection .cta-dates-container, .upcoming-box-inner .full-calendar, .video-reg-prompt h4 {
+margin-top: 15px;
+}
+.live-page .live-page-content .topbar {
+background-color: #333;
+height: 65px;
+width: 100%;
+position: relative;
+}
+.player-content {
+background-color: #2a2a2a;
+}
+.navbar{
+	background-color: #333;
+	border: 0px solid transparent;
+}
+.navbar-brand{
+	padding-top: 5px; 
+	
+}
+.wrap_r{ background:url(../images/newplay_r_bg.gif);height:540px;}
+.tabbox{ background:url(../images/newplay_r_btbg.gif) repeat-x 0 bottom; border-left:1px solid #f1f1f1; width:100%; overflow:hidden;position:relative;}
+.wrap_r .green{ color:#547816 !important;}
+.wrap_r_w{ width:100%; position:absolute; top:0; left:0;}
+.coursetitle{ padding:22px 35px 16px;}
+.coursetitle h3{ font-size:14px; line-height:22px; margin-bottom:10px;}
+
+.coursetab{ height:34px; overflow:hidden;}
+.coursetab li{ background:url(../images/newplay_r_bg.gif) no-repeat; width:165px; height:34px; overflow:hidden; float:left; text-align:center; line-height:34px; font-size:14px; font-weight:bold; cursor:pointer;}
+.coursetab li.active{ background-position:-170px 0; color:#557917; cursor:default;}
+
+/* Scrollbar */
+.scrollbox{}
+.scrollbox .viewport { width:300px; overflow:hidden; position:relative;}
+.scrollbox .overview { position:absolute; left:0; top:0; padding:0; margin:0;}
+.scrollbox .scrollbar{ background:url(../images/scrollbar_trackbg_y.gif) no-repeat 0 0; position:relative; float:right; width:13px; right:6px; z-index:5;}
+.scrollbox .track { background:url(../images/scrollbar_trackendbg_y.gif) no-repeat 0 100%; height:100%; width:13px; position:relative; padding:0 1px;}
+.scrollbox .thumb { background:url(../images/scrollbar_thumbbg_y.gif) no-repeat 50% 100%; height:20px; width:13px; cursor:pointer; overflow:hidden; position:absolute; top:0; left:0;}
+.scrollbox .thumb .end { background:url(../images/scrollbar_thumbbg_y.gif) no-repeat 50% 0; overflow:hidden; height:5px; width:13px;}
+.scrollbox .disable { display:none;}
+.noSelect { user-select:none; -o-user-select:none; -moz-user-select:none; -khtml-user-select:none; -webkit-user-select:none;}
+/*---------------------------- Ä¿Â¼ ----------------------------*/
+.coursetitle, .coursetab li a, .godiscuss a, .mululist dd.active a, .icon_face, .btn_faqitaolun, .btn_huifutaolun, .topic_more, .ds_bg .ds_arr, .d_discuss .ds_bg .letter_info_lt, .d_discuss .ds_bg .letter_info_rt, .d_discuss .ds_bg .letter_info_lb, .d_discuss .ds_bg .letter_info_rb, .select_box_v, .atuser em{ background:url(../images/newplay_r.gif) no-repeat;}
+
+.coursetitle{ background-repeat:repeat-x; padding:22px 35px 16px;}
+.coursetitle h3{ font-size:14px; line-height:22px; margin-bottom:10px;}
+
+.coursetab{ height:35px; width:330px; overflow:hidden;}
+.coursetab li{ width:165px; height:35px; overflow:hidden; float:left; font-size:14px; font-weight:bold;}
+.coursetab li a{ background-position:0 -190px; color:#333; display:block; width:165px; height:35px; line-height:35px; overflow:hidden; text-align:center; cursor:pointer;}
+.coursetab li a:hover{ background-position:0 -240px; color:#333 !important; text-decoration:none;}
+.coursetab li.active a, .coursetab li.active a:hover{ background-position:0 -150px; color:#557917 !important; cursor:default;}
+
+.godiscuss{ height:65px; overflow:hidden;}
+.godiscuss a{ background-position:0 -300px; width:178px; height:45px; display:block; margin:10px auto 0;}
+.godiscuss a:hover{ background-position:0 -350px;}
+
+#scrollbar1 { width:329px; margin:13px 0; overflow:hidden;}
+#scrollbar1 .viewport { width:300px;}
+.mululist{ width:300px;}
+.mululist dd, .mululist dt{ height:34px; line-height:34px;}
+.mululist dd a{ display:block; padding-left:30px; height:34px; line-height:34px; width:270px;}
+.mululist dd a:hover{ text-decoration:none;}
+.mululist dd a span{ padding-left:15px; color:#666 !important;}
+.mululist dd a span.title{ color:#333 !important; padding:0; font-weight:bold;}
+.mululist dd a strong{ color:#333;}
+.mululist dd.active{ background:url(../images/newplay_r_bgon.gif) repeat-y; color:#578e0b; cursor:default;}
+.mululist dd.active a{ background-position:-155px -420px; color:#578e0b; cursor:default;}
+.mululist dd.on{ background:url(../images/newplay_r_bgon.gif) repeat-y; color:#578e0b;}
+.mululist dt{ padding-left:30px; font-weight:bold; padding-top:5px;}
+
+/*---------------------------- ÌÖÂÛ ----------------------------*/
+#taolun_div{ background:none;}
+.usertopic{ position:relative;}
+.usertopic_oper, .usertopic .usertopic_list li, #scrollbar2 .usertopic_list, #scrollbar2 .usertopic_list li{ background:url(../images/newplay_r_line.gif) no-repeat 0 bottom;}
+.usertopic_oper{ overflow:hidden; height:34px; line-height:34px; padding-bottom:2px; clear:both; margin-top:10px; width:329px;}
+.usertopic_oper .flo_r{ float:right; overflow:hidden; padding-right:20px;}
+.usertopic_oper .flo_r a{ color:#999;}
+.usertopic_oper .flo_r a:hover{ text-decoration:none;}
+.usertopic_oper .flo_r em{ padding:0 10px; color:#999;}

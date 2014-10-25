@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="cn" class="live-page">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title></title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<!-- jquery slider -->
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link href="css/player.css" rel="stylesheet" />
+<style type="text/css">
+.others {
+	border-bottom: 1px solid #c2c7cc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.content_area {
+	border-right: 1px solid #c2c7cc;
+}
+
+.others_nl {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.sortlist {
+	background: none repeat scroll 0 0 #edf0f2;
+	clear: both;
+	height: 30px;
+	margin-top: 17px;
+}
+
+.ordertab {
+	background: none repeat scroll 0 0 #fff;
+	display: block;
+	float: left;
+}
+
+.ordertab a.newOn {
+	background: url("images/orderTab.png") no-repeat scroll 0 0
+		rgba(0, 0, 0, 0);
+}
+
+.ordertab a.newOn, .ordertab a.hotOn {
+	color: transparent;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -200em;
+	width: 60px;
+}
+
+.ordertab a {
+	background: none repeat scroll 0 0 #edf0f2;
+	float: left;
+	line-height: 30px;
+	margin-right: 2px;
+	text-align: center;
+	width: 60px;
+}
+
+a:link, a:visited {
+	color: #5e5e5e;
+}
+
+:link, *:visited, ins {
+	text-decoration: none;
+}
+
+a, input, button {
+	outline: medium none;
+}
+
+a {
+	outline: medium none;
+}
+
+.answertabcon {
+	clear: both;
+}
+
+.ques-list {
+	padding: 10px 0;
+}
+
+.answerlist, .qareply-detail {
+	border-bottom: 1px solid #eee;
+}
+
+.answerlist {
+	border-bottom: 1px solid #c7c7c7;
+	clear: both;
+	overflow: hidden;
+	padding: 16px 0 12px;
+	position: relative;
+}
+
+.queHead {
+	border-radius: 20px;
+	display: block;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 40px;
+}
+
+.queslist {
+	width: 600px;
+}
+
+.l {
+	float: left;
+}
+
+.finaltime {
+	color: #b4bbbf;
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 20px;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+}
+</style>
+<!-- Fonts 
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	-->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<div id="header" class="site-header">
+		<div class="site-nav">
+			<div class="container-fluid">
+				<div class="row nav-row">
+					<div class="col-xs-5">
+						<a class="logo" href="/"
+							title="Free live online workshops taught by world-class experts. Learn photography, Photoshop, software, design and more. All workshops available live for free.">
+							<i class="cl-icon-font">startup.com 在线创业教育平台</i>
+						</a>
+					</div>
+					<div class="col-xs-7"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid ">
+		<div id="topbar" class="topbar">
+			<div class="row">
+				<div class="col-xs-5">
+					<h4>
+						返回课程<small>架构之路——穿行在产品和业务之间</small>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="player-content">
+			<div class="row others_nl ">
+				<div class="col-md-5">
+					<div id="playerContainer" style="height: 540px;"></div>
+					<div id="imgPreload" style="display: none"></div>
+				</div>
+				<div class="col-md-5">
+					<div id="slideContainer">
+						<img src="resources/wlf-architecture-road/zh/slides/wlf.1.jpg"
+							class="img-responsive img-rounded" />
+					</div>
+
+				</div>
+				<div class="col-md-2">
+					<div class="wrap_r"></div>
+				</div>
+
+			</div>
+			<div class="wrap_l" style="margin-right: 330px;">
+
+				<div class="winsize">
+					<a href="javascript:void(0)" target="_self" class=""></a>
+				</div>
+				<!--S-->
+
+
+
+			</div>
+			<div class="row others_nl">
+				<div class="col-xs-2">
+					<span class="l">分享：</span>
+					<div class="bdsharebuttonbox">
+						<a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+							class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a
+							href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a
+							href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a
+							href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a
+							href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+					</div>
+					<script>
+						window._bd_share_config = {
+							"common" : {
+								"bdSnsKey" : {},
+								"bdText" : "",
+								"bdMini" : "2",
+								"bdMiniList" : false,
+								"bdPic" : "",
+								"bdStyle" : "1",
+								"bdSize" : "16"
+							},
+							"share" : {}
+						};
+						with (document)
+							0[(getElementsByTagName('head')[0] || body)
+									.appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='
+									+ ~(-new Date() / 36e5)];
+					</script>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="clearfix">...</div>
+	<div class="navbar navbar-default navbar-fixed-bottom"
+		role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/"> <img alt="Brand"
+					class="img-responsive"
+					src="http://i1.umivi.net/v/static/2013/v/images/newplay_logo.png">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="ckplayer/ckplayer.js"
+		charset="utf-8"></script>
+	<script type="text/javascript" src="js/PlayerPresentation.js"
+		charset="utf-8"></script>
+	<!-- Script to Activate the Carousel -->
+	<script>
+		$(document).ready(function() {
+			$('.bxslider').bxSlider({
+				minSlides : 2,
+				maxSlides : 4,
+				slideWidth : 275,
+				slideMargin : 20,
+				/* ticker: true speed: 10000,*/
+				auto : true,
+				autoControls : true
+			});
+			$('#play_tab a').click(function(e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+
+		});
+	</script>
+	<script type="text/javascript">
+		var slides = new Array(
+				'resources/wlf-architecture-road/zh/slides/wlf.1.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.2.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.3.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.4.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.5.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.6.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.7.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.8.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.9.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.10.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.11.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.12.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.13.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.14.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.15.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.16.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.17.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.18.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.19.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.20.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.21.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.22.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.23.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.24.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.25.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.26.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.27.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.28.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.29.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.30.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.31.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.32.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.33.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.34.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.35.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.36.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.37.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.38.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.39.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.40.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.41.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.42.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.43.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.44.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.45.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.46.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.47.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.48.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.49.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.50.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.51.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.52.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.53.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.54.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.55.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.56.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.57.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.58.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.59.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.60.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.61.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.62.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.63.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.64.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.65.jpg',
+				'resources/wlf-architecture-road/zh/slides/wlf.66.jpg'), TIMES = new Array(
+				0, 40, 80, 90, 100, 130, 150, 160, 170, 180, 190, 210, 230,
+				240, 260, 290, 320, 340, 350, 370, 440, 460, 470, 480, 500,
+				510, 570, 620, 640, 660, 680, 700, 720, 740, 760, 770, 800,
+				830, 880, 890, 895, 900, 905, 910, 915, 930, 960, 970, 990,
+				1010, 1025, 1040, 1050, 1200, 1210, 1250, 1360, 1480, 1740,
+				1830, 1850, 1890, 1930, 1990, 2070, 2110, 2115)
+		//init('ckplayer_a1');
+
+		var flashvars = {
+			f : 'resources/infoq_1.flv',
+			c : 0,
+			p : 2,
+			o : 138,
+			t : '10|10',
+			v : 30,
+			loaded : 'loadedHandler'
+		};
+		var params = {
+			bgcolor : '#FFF',
+			allowFullScreen : true,
+			allowScriptAccess : 'always',
+			wmode : "transparent"
+		};
+		var video = [ 'resources/infoq_1.mp4->video/mp4' ];
+		CKobject.embed('ckplayer/ckplayer.swf', 'playerContainer',
+				'ckplayer_a1', '100%', '100%', false, flashvars, video, params);
+
+		function loadedHandler() {
+			if (CKobject.getObjectById('ckplayer_a1').getType()) {//说明使用html5播放器
+				CKobject.getObjectById('ckplayer_a1').addListener('play',
+						playHandler);
+			} else {
+				CKobject.getObjectById('ckplayer_a1').addListener('play',
+						'playHandler');
+			}
+		}
+		function removeEvent() {//删除监听事件
+			if (CKobject.getObjectById('ckplayer_a1').getType()) {//说明使用html5播放器
+				CKobject.getObjectById('ckplayer_a1').removeListener('time',
+						playHandler);
+			} else {
+				CKobject.getObjectById('ckplayer_a1').removeListener('time',
+						'playHandler');
+			}
+		}
+		function playHandler() {
+			alert("start to play");
+			SlideSynchronizer.setTimes(TIMES);
+			SlideSynchronizer.start();
+		}
+	</script>
+
+</body>
+
+</html>
