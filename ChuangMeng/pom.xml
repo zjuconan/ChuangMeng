@@ -2,8 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ChuangMeng</groupId>
   <artifactId>ChuangMeng</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  <parent>  
+       <groupId>ChuangMengBase</groupId>  
+       <artifactId>ChuangMengBase</artifactId>  
+       <version>0.0.1-SNAPSHOT</version>  
+   </parent>  
+    
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -116,5 +122,10 @@
   		<artifactId>aspectjweaver</artifactId>
   		<version>1.8.2</version>
   	</dependency>
+  	<dependency>
+		<groupId>commons-dbcp</groupId>
+		<artifactId>commons-dbcp</artifactId>
+		<version>1.4</version>
+	</dependency>
   </dependencies>
 </project>
