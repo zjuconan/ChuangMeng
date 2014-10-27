@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cacheService>
+  <cache name="user_type">
+	  <key class="com.cm.domain.UserType" method="getTypeCd"/>
+	  <loader class="com.cm.dao.table.impl.UserTypeDaoImpl" method="loadAll"/>
+	  <bean id="userTypeDaoImpl"/>
+  </cache>
+
+  <cache name="user_basic">
+	  <key class="com.cm.domain.UserBasic" method="getUserId"/>
+	  <loader class="com.cm.dao.table.impl.UserBasicDaoImpl" method="loadAll"/>
+	  <bean id="userBasicDaoImpl"/>
+  </cache>
+  
+  <cache name="course_type">
+	  <key class="com.cm.domain.CourseType" method="getTypeCd"/>
+	  <loader class="com.cm.dao.table.impl.CourseTypeDaoImpl" method="loadAll"/>
+	  <bean id="courseTypeDaoImpl"/>
+  </cache>
+  
+  <cache name="course">
+	  <key class="com.cm.domain.Course" method="getCourseId"/>
+	  <loader class="com.cm.dao.table.impl.CourseDaoImpl" method="loadAll"/>
+	  <bean id="courseDaoImpl"/>
+  </cache>
+  
+  <cache name="lesson">
+	  <key class="com.cm.domain.Lesson" method="getLessonId"/>
+	  <loader class="com.cm.dao.table.impl.LessonDaoImpl" method="loadAll"/>
+	  <bean id="lessonDaoImpl"/>
+  </cache>
+
+  <cache name="course_lesson">
+	  <key class="com.cm.domain.CourseLesson" method="getComp_id"/>
+	  <loader class="com.cm.dao.table.impl.CourseLessonDaoImpl" method="loadAll"/>
+	  <bean id="CourselessonDaoImpl"/>
+  </cache>
+
+  <cache name="course_statistics">
+	  <key class="com.cm.domain.CourseStatistics" method="getCourseId"/>
+	  <loader class="com.cm.dao.table.impl.CourseStatisticsDaoImpl" method="loadAll"/>
+	  <bean id="CourseStatisticsDaoImpl"/>
+  </cache>
+  
+  <cache name="lesson_statistics">
+	  <key class="com.cm.domain.LessonStatistics" method="getLessonId"/>
+	  <loader class="com.cm.dao.table.impl.LessonStatisticsDaoImpl" method="loadAll"/>
+	  <bean id="LessonStatisticsDaoImpl"/>
+  </cache>
+  
+   <cache name="course_comment">
+	  <key class="com.cm.domain.CourseComment" method="getCommentId"/>
+	  <loader class="com.cm.dao.table.impl.CourseCommentDaoImpl" method="loadAll"/>
+	  <bean id="CourseCommentDaoImpl"/>
+  </cache>
+
+   <cache name="lesson_comment">
+	  <key class="com.cm.domain.LessonComment" method="getCommentId"/>
+	  <loader class="com.cm.dao.table.impl.LessonCommentDaoImpl" method="loadAll"/>
+	  <bean id="LessonCommentDaoImpl"/>
+  </cache>
+
+   <cache name="lesson_note">
+	  <key class="com.cm.domain.LessonNote" method="getNoteId"/>
+	  <loader class="com.cm.dao.table.impl.LessonNoteDaoImpl" method="loadAll"/>
+	  <bean id="LessonNoteDaoImpl"/>
+  </cache>
+
+   <cache name="lesson_task">
+	  <key class="com.cm.domain.LessonTask" method="getTaskId"/>
+	  <loader class="com.cm.dao.table.impl.LessonTaskDaoImpl" method="loadAll"/>
+	  <bean id="LessonTaskDaoImpl"/>
+  </cache>
+
+   <cache name="user_task">
+	  <key class="com.cm.domain.UserTask" method="getComp_id"/>
+	  <loader class="com.cm.dao.table.impl.UserTaskDaoImpl" method="loadAll"/>
+	  <bean id="UserTaskDaoImpl"/>
+  </cache>
+
+   <cache name="lesson_faq">
+	  <key class="com.cm.domain.LessonFaq" method="getFaqId"/>
+	  <loader class="com.cm.dao.table.impl.LessonFaqDaoImpl" method="loadAll"/>
+	  <bean id="LessonFaqDaoImpl"/>
+  </cache>           
+</cacheService>
