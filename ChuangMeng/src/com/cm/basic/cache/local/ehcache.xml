@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache name="CM" updateCheck="false">
+
+  <defaultCache
+      maxElementsInMemory="10000"
+      eternal="false"
+      timeToIdleSeconds="120"
+      timeToLiveSeconds="120"
+      overflowToDisk="false"
+      memoryStoreEvictionPolicy="LRU"
+  />
+
+  <cache name="user_type"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="20"
+  />
+  
+  <cache name="user_basic"
+         maxElementsOnDisk="1000000"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="10000"
+  />
+  
+  <cache name="course_type"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="20"
+  />
+  
+  <cache name="course"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="200"
+  />
+  
+  <cache name="lesson"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="2000"
+  />
+    
+  <cache name="course_lesson"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="2000"
+  />
+  
+  <cache name="course_statistics"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="200"
+  />
+  
+  <cache name="lesson_statistics"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="2000"
+  />
+  
+  <cache name="course_comment"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="10000"
+  >
+<!--          <searchable> -->
+<!--          	<searchAttribute name="pageId" expression="value.pageId"></searchAttribute> -->
+<!--          	<searchAttribute name="pageNm" expression="value.pageNm"></searchAttribute> -->
+<!--          </searchable> -->
+  </cache>
+  
+  <cache name="lesson_comment"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="100000"
+  >
+<!--          <searchable> -->
+<!--          	<searchAttribute name="pageId" expression="value.pageId"></searchAttribute> -->
+<!--          	<searchAttribute name="guiActionId" expression="value.guiActionId"></searchAttribute> -->
+<!--          	<searchAttribute name="guiActionNm" expression="value.guiActionNm"></searchAttribute> -->
+<!--          </searchable> -->
+  </cache>
+  
+  <cache name="lesson_note"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="10000"
+  />
+  
+  <cache name="lesson_task"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="2000"
+  />
+  
+  <cache name="user_task"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="10000"
+  />
+  
+  <cache name="lesson_faq"
+         maxElementsOnDisk="0"
+         eternal="true"
+         maxEntriesLocalHeap="1"
+         maxElementsInMemory="10000"
+  />
+  
+</ehcache>

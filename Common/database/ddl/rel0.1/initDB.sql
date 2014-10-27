@@ -1,3 +1,19 @@
+drop table lesson_faq;
+drop table user_task;
+drop table lesson_task;
+drop table lesson_note;
+drop table lesson_comment;
+drop table course_comment;
+drop table lesson_statistics;
+drop table course_statistics;
+drop table course_lesson;
+drop table lesson;
+drop table course;
+drop table course_type;
+drop table user_basic;
+drop table user_type;
+
+
 
 create table user_type (
 	type_cd		varchar(10)	not null primary key,
@@ -16,9 +32,15 @@ create table user_basic (
 	foreign key user_basic_fk1(user_type_cd) references user_type (type_cd)	
 );
 
+create table course_type (
+	type_cd		varchar(20)	not null primary key,
+	type_name	varchar(50)	not null
+);
+
 create table course (
 	course_id	smallint	not null	auto_increment primary key,
 	course_name	varchar(50)	not null,
+	course_type_cd	varchar(20)	not null,
 	lecturer_id	int			not null,
 	course_pic	varchar(100),
 	course_length	smallint	not null,
@@ -29,7 +51,8 @@ create table course (
 	update_time	datetime	not null,
 	update_user	varchar(50)	not null,
 	
-	foreign key course_fk1(lecturer_id) references user_basic(user_id)
+	foreign key course_fk1(course_type_cd) references course_type(type_cd),
+	foreign key course_fk2(lecturer_id) references user_basic(user_id)
 );
 
 create table lesson (
