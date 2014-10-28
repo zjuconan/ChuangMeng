@@ -181,3 +181,14 @@ create table lesson_faq (
 	
 	foreign key lesson_faq_fk1(lesson_id)	references lesson(lesson_id)
 );
+
+create table chat_message (
+	msg_id		bigint	not null auto_increment primary key,
+	lesson_id	smallint	not null,
+	user_id		int		not null,
+	msg_content	text	not null,
+	msg_time	datetime	not null,
+	
+	foreign key chat_message_fk1(lesson_id)	references lesson(lesson_id),
+	foreign key chat_message_fk2(user_id)	references user_basic(user_id)
+);
