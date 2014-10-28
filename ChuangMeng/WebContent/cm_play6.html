@@ -8,18 +8,25 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/play6.css" rel="stylesheet" />
 <script src="js/jquery-1.11.0.js"></script>
+<script src="js/tinyscrollbar.js"></script>
 </head>
 <body>
 	<div class="wrap">
 		<div class="wrap_l">
-			<div class="module">
-				<div class="prev" style="display: none;">
-					<a target="_self" href="javascript:void(0)"></a>
-				</div>
-				<div class="returncourse">
-					<a href="/ruanqi01.shtml"></a>
-				</div>
-			</div>
+			<div id="header">  
+    <div class="videohead">
+      <a href="/learn/121" class="revert l">&lt;返回</a>
+      <h1>
+        <a href="javascript:void(0);" id="chaptername" class="chaptername  l" style="background: rgb(42, 44, 46);">
+        	
+          <span class="borderstyle"><b style="font-weight:normal;">1-1 float的历史</b>
+          <span class="glyphicon glyphicon-tasks"></span>
+          </span>
+          
+        </a>
+      </h1>
+        </div>
+</div>
 			<div class="winsize">
 				<a target="_self" href="javascript:void(0)"></a>
 			</div>
@@ -37,17 +44,17 @@
 			<div class="content_area">
 				<div class="content">
 					<div class="list_content">
-						<div class="content_kcmul"  style="display:none">
+						<div id="content_kcmul" class="content_div"  style="display:none">
 							
 						</div>
-						<div class="content_kcjs"  style="display:none">
+						<div id="content_kcjs" class="content_div" style="display:none">
 							<p class="lead">
 								概要
 十几年来，经历了许多不一样的系统，面临过不一样的挑战与矛盾，一直试图从方法论的角度去思考架构工作的共通之处，却又每每陷入过度还原的迷思。篱笆作为一家起源于社区的电子商务公司，反映到技术层面就是同时要面对这两个不同的领域，以及经营战略的变化调整。如何在产品和业务的夹缝之间完成技术架构的抽象与平衡，寻找更有效的价值定位，这当中有些经验教训和个人感悟愿与众人分享。
 							</p>
 						
 						</div>
-						<div class="content_jsjs"  style="display:block">
+						<div id="content_jsjs" class="content_div"  style="display:block">
 							<div class="media">
 							  <a class="pull-left" href="#">
 							    <img class="media-object" src="images/p.png" alt="...">
@@ -58,9 +65,9 @@
 							  </div>
 							</div>
 						</div>
-						<div class="content_ktpl"  style="display:none"></div>
-						<div class="content_ktbj"  style="display:none"></div>
-						<div class="content_ktfaq"  style="display:none"></div>
+						<div id="content_ktpl" class="content_div" style="display:none"></div>
+						<div id="content_ktbj" class="content_div" style="display:none"></div>
+						<div id="content_ktfaq" class="content_div" style="display:none"></div>
 					</div>
 				</div>
 			</div>
@@ -556,7 +563,7 @@
 				<div class="nav_l">
 					
 					<p class="nav_l_list">
-						<a  title="课程目录" target="_self" href="javascript:void(0)"
+						<a  title="课程目录" target="_self" href="javascript:void(0)" 
 							onclick="changeContent(this);"  class="ico_kcjs nav_popup"><span class="glyphicon glyphicon-list-alt"></span> 课程目录</a>
 						<a  title="课程介绍" target="_self" href="javascript:void(0)"
 							onclick="changeContent(this);" id="content_kcjs" class="ico_kcjs nav_popup"><span class="glyphicon glyphicon-book"></span> 课程介绍</a> 
@@ -595,6 +602,74 @@
 			</div>
 		</div>
 	</div>
+	<div id="scrollcont" style="display:none;">
+	<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+	<div class="viewport">
+	<div class="overview">
+  <h3>分享：CSS深入理解之float浮动...</h3>
+      <ul class="detaillist ps-container">
+                   <li>
+              <span><em></em>第1章 Float的历史-知其历史而更知当下...</span>
+                                              <a href="/video/2660" class="studyvideo">1-1 float的历史(02:39)<b>正在学习</b>                  <i class="do-study"></i>
+                </a>
+                                                              <a href="/code/2775" class="programme">1-2 浮动的原本作用-文字...                  <i class=""></i>
+                </a>
+                                         </li>
+                   <li>
+              <span><em></em>第2章 Float的特性-包裹与破坏</span>
+                                              <a href="/video/2711" class="studyvideo">2-1 包裹与破坏(03:40)                  <i class=""></i>
+                </a>
+                                         </li>
+                   <li>
+              <span><em></em>第3章 被误解的Float-是魔鬼还是情非得...</span>
+                                              <a href="/video/2761" class="studyvideo">3-1 被误解的浮动(04:16)                  <i class=""></i>
+                </a>
+                                         </li>
+                   <li>
+              <span><em></em>第4章 清除浮动-究竟是清除浮动还是清...</span>
+                                              <a href="/video/2762" class="studyvideo">4-1 清除浮动(05:10)                  <i class=""></i>
+                </a>
+                                                              <a href="/code/2778" class="programme">4-2 clear与margin重叠                  <i class=""></i>
+                </a>
+                                         </li>
+                   <li>
+              <span><em></em>第5章 Float的滥用-不在其职而谋其政...</span>
+                                              <a href="/video/2863" class="studyvideo">5-1 浮动的滥用(08:32)                  <i class=""></i>
+                </a>
+                                                              <a href="/code/2864" class="programme">5-2 浮动去空格                  <i class=""></i>
+                </a>
+                                                              <a href="/code/2865" class="programme">5-3 浮动与display:block...                  <i class=""></i>
+                </a>
+                                         </li>
+                   <li>
+              <span><em></em>第6章 Float与流体布局-我本流体布局生...</span>
+                                              <a href="/video/2886" class="studyvideo">6-1 Float与流体布局(08:08)                  <i class=""></i>
+                </a>
+                                                              <a href="/code/2888" class="programme">6-2 浮动与两侧皆自适应的...                  <i class=""></i>
+                </a>
+                                                              <a href="/code/2889" class="programme">6-3 浮动与右侧尺寸固定的...                  <i class=""></i>
+                </a>
+                                                              <a href="/code/2890" class="programme">6-4 浮动与单侧尺寸固定的...                  <i class=""></i>
+                </a>
+                                         </li>
+                   <li>
+              <span><em></em>第7章 Float与兼容性——不同的老爸不...</span>
+                                              <a href="/video/2887" class="studyvideo">7-1 Float与兼容性(07:39)                  <i class=""></i>
+                </a>
+                                                              <a href="/code/3192" class="programme">7-2 含clear的浮动元素包...                  <i class=""></i>
+                </a>
+                                                              <a href="/code/3194" class="programme">7-3 浮动元素倒数2个莫名...                  <i class=""></i>
+                </a>
+                                                              <a href="/code/3196" class="programme">7-4 浮动元素倒数2个浮动...                  <i class=""></i>
+                </a>
+                                                              <a href="/code/3197" class="programme">7-5 浮动与同一行的差异...                  <i class=""></i>
+                </a>
+                                         </li>
+               </ul>
+    </div>
+</div>
+</div>
+	<div id="video_mark" class="video_mark" style="display:none;"></div>
 	<script type="text/javascript" src="ckplayer/ckplayer.js"
 		charset="utf-8"></script>
 	<script type="text/javascript" src="js/PlayerPresentation.js"
@@ -602,12 +677,22 @@
 	<script type="text/javascript">
 	$(".wrap").height($(window).height());
 	$(".vidoe_c").height($(window).height()-60);
-	
-	function changeContent(){
-		var id=$(this).attr('id');
-		alert(id);
-	}
-
+	$(".video_mark").height($(window).height());
+	$(".video_mark").width($(window).width());
+	$(".nav_popup").click(function(){
+		var id=$(this).attr("id");
+		$(".content_div").css("display","none");
+		$("#"+id).css("display","block");
+	});
+	$("#chaptername").click(function(){ alert("test");
+		$(".video_mark").css("display","block");
+		$("#scrollcont").css("display","block");
+	});
+	$(".video_mark").click(function(){
+		$(".video_mark").css("display","none");
+		$("#scrollcont").css("display","none");
+	});
+	$('#scrollcont').tinyscrollbar();
 		var slides = new Array(
 				'resources/wlf-architecture-road/zh/slides/wlf.1.jpg',
 				'resources/wlf-architecture-road/zh/slides/wlf.2.jpg',
