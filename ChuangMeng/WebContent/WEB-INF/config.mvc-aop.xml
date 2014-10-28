@@ -13,7 +13,7 @@
 		default-autowire="byName">
 			
 	<aop:config>
-		<aop:pointcut id="controllerMethod" expression="within(com.statestr.otaf.controller..*)"/>
+		<aop:pointcut id="controllerMethod" expression="within(com.cm.controller..*)"/>
 		<aop:aspect id="methodTraceLogging" ref="methodLoggingAop">
 			<aop:around pointcut-ref="controllerMethod" method="around"/>	
 		</aop:aspect>
