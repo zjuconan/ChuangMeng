@@ -162,6 +162,11 @@ display: block;
 #scrollbar3 .track { background-color: #ccc; height: 100%; width:5px; position: relative;}
 #scrollbar3 .thumb { background:#cc0071; height: 20px; width:5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0; }
 #scrollbar3 .disable { display: none; }
+#scrollbar4 {margin-right:200px;background: url("../images/newplay_r_bg.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	bottom: 0;
+    height: auto;
+    overflow: hidden;
+    top: 0;}
 .video_mark {
 position: absolute;
 left: 0;
@@ -265,7 +270,7 @@ a:hover {
     bottom: 70px;
     height: auto;
     left: 0;
-    padding: 0 20px;
+    padding: 0 10px;
     position: absolute;
     right: 0;
     text-align: center;
@@ -275,7 +280,6 @@ a:hover {
     background-position: 0 top;
     background-repeat: repeat-x;
     height: 200px;
-    margin-left: 20px;
     max-width: 1010px;
     position: relative;
     text-align: left;
@@ -632,6 +636,10 @@ input, select, textarea {
     color: #8fc223 !important;
     text-decoration: none;
 }
+.nav_active {
+    color: #8fc223 !important;
+    text-decoration: none;
+}
 .nav_l {
     float: left;
     padding: 8px 0 0 20px;
@@ -644,7 +652,11 @@ input, select, textarea {
     line-height: 52px;
     margin-right: 32px;
 }
-
+a:focus{
+	outline:none;}
+a{
+	text-decoration : none;
+}
 .nav_l .logo {
     background: url("../images/newplay_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
