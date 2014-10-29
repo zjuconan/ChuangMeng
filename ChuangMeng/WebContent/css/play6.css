@@ -155,7 +155,13 @@ display: block;
 #scrollcont .thumb { background:#cc0071; height: 20px; width:5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0; }
 #scrollcont .disable { display: none; }
 .noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
-
+#scrollbar3 {width: 329px;}
+#scrollbar3 .viewport { width: 300px; height: 600px; overflow: hidden; position: relative; }
+#scrollbar3 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar3 .scrollbar{ position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar3 .track { background-color: #ccc; height: 100%; width:5px; position: relative;}
+#scrollbar3 .thumb { background:#cc0071; height: 20px; width:5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0; }
+#scrollbar3 .disable { display: none; }
 .video_mark {
 position: absolute;
 left: 0;
@@ -252,7 +258,9 @@ a:hover {
 .wrap_l .winsize a:hover {
     background-position: -396px 0;
 }
-
+.wrap_l .winsize a.winsize_right {
+    background-position: -427px 0;
+}
 .content_area {
     bottom: 70px;
     height: auto;
@@ -434,9 +442,9 @@ ol, ul, li, dd, dt, dl {
 }
 
 .usertopic_oper .flo_r {
-    float: right;
+    float: left;
     overflow: hidden;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 .usertopic_oper .flo_r a {
     color: #999;
@@ -468,6 +476,7 @@ ol, ul, li, dd, dt, dl {
     padding-left: 13px;
     width: 215px;
 }
+
 .usertopic .usertopic_list li p, .usertopic .usertopic_detail .d_topic p {
     line-height: 20px;
 }
