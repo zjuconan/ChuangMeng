@@ -1,15 +1,17 @@
+drop table chat_message;
 drop table lesson_faq;
 drop table user_task;
 drop table lesson_task;
 drop table lesson_note;
 drop table lesson_comment;
 drop table course_comment;
+drop table course_material;
 drop table lesson_statistics;
 drop table course_statistics;
-drop table course_lesson;
 drop table lesson;
 drop table course;
 drop table course_type;
+drop table lecturer;
 drop table user_basic;
 drop table user_type;
 
@@ -27,9 +29,16 @@ create table user_basic (
 	nicky_name	varchar(50)	not null,
 	email		varchar(50)	not null,
 	user_type_cd	varchar(10)	not null,
-	user_icon	varchar(100),
+	user_icon_url	varchar(100),
 	
 	foreign key user_basic_fk1(user_type_cd) references user_type (type_cd)	
+);
+
+create table lecturer (
+	lecturer_id		int		not null primary key,
+	lecturer_desc	text	not null,
+	
+	foreign key lecturer_fk1(lecturer_id) references user_basic(user_id)
 );
 
 create table course_type (
@@ -42,7 +51,7 @@ create table course (
 	course_name	varchar(50)	not null,
 	course_type_cd	varchar(20)	not null,
 	lecturer_id	int			not null,
-	course_pic	varchar(100),
+	course_pic_url	varchar(100),
 	course_length	smallint	not null,
 	price		decimal(6, 2),
 	simple_desc	varchar(50)	not null,
@@ -59,7 +68,8 @@ create table lesson (
 	lesson_id	smallint	not null auto_increment	primary key,
 	lesson_name	varchar(50)	not null,
 	course_id	smallint	not null,
-	lesson_pic	varchar(100),
+	lesson_order tinyint	not null,
+	lesson_pic_url	varchar(100),
 	lesson_length	smallint	not null,
 	simple_desc	varchar(50)	not null,
 	detail_desc	text,
@@ -70,27 +80,27 @@ create table lesson (
 	foreign key lesson_fk1(course_id) references course(course_id)
 );
 
-create table course_lesson (
-	course_id	smallint	not null,
-	lesson_id	smallint	not null,
-	lesson_order	tinyint	not null,
-	update_time	datetime	not null,
-	update_user	varchar(50)	not null,
-	
-	primary key (course_id, lesson_id),
-	foreign key course_lesson_fk1(course_id) references course(course_id),
-	foreign key course_lesson_fk2(lesson_id) references lesson(lesson_id)
-);
 
 create table course_statistics (
 	course_id	smallint	not null primary key,
 	play_num	smallint	not null,
 	good_cmnt_num	smallint	not null,
 	bad_cmnt_num	smallint	not null,
+	share_num	smallint	not null,
+	favor_num	smallint	not null,
 	update_time	datetime	not null,
 	update_user	varchar(50)	not null,
 	
 	foreign key course_statistics_fk1(course_id) references course(course_id)
+);
+
+create table course_material (
+	material_id	smallint	not null auto_increment primary key,
+	material_name	varchar(50)	not null,
+	course_id	smallint	not null,
+	material_url	varchar(100)	not null,
+	download_num	smallint	not null,
+	upload_time		datetime	not null
 );
 
 create table lesson_statistics (
@@ -98,6 +108,8 @@ create table lesson_statistics (
 	play_num	smallint	not null,
 	good_cmnt_num	smallint	not null,
 	bad_cmnt_num	smallint	not null,
+	share_num	smallint	not null,
+	favor_num	smallint	not null,
 	update_time	datetime	not null,
 	update_user	varchar(50)	not null,
 	
@@ -158,8 +170,9 @@ create table user_task (
 	task_id		bigint	not null,
 	task_content	text	not null,
 	complete_time	datetime	not null,
+	pass_flag	boolean,
 	task_feedback	text,
-	feedback_advisor	int	not null,
+	feedback_advisor	int,
 	feedback_time	datetime,
 	update_time	datetime	not null,
 	update_user	varchar(50)	not null,
@@ -180,4 +193,15 @@ create table lesson_faq (
 	update_user	varchar(50)	not null,
 	
 	foreign key lesson_faq_fk1(lesson_id)	references lesson(lesson_id)
+);
+
+create table chat_message (
+	msg_id		bigint	not null auto_increment primary key,
+	lesson_id	smallint	not null,
+	user_id		int		not null,
+	msg_content	text	not null,
+	msg_time	datetime	not null,
+	
+	foreign key chat_message_fk1(lesson_id)	references lesson(lesson_id),
+	foreign key chat_message_fk2(user_id)	references user_basic(user_id)
 );

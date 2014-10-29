@@ -83,5 +83,11 @@
 	  <key class="com.cm.domain.LessonFaq" method="getFaqId"/>
 	  <loader class="com.cm.dao.table.impl.LessonFaqDaoImpl" method="loadAll"/>
 	  <bean id="LessonFaqDaoImpl"/>
-  </cache>           
+  </cache>
+  
+   <cache name="chat_message">
+	  <key class="com.cm.domain.ChatMessage" method="getMsgId"/>
+	  <loader class="com.cm.dao.table.impl.ChatMessageDaoImpl" method="loadAll"/>
+	  <bean id="ChatMessageDaoImpl"/>
+  </cache>              
 </cacheService>

@@ -17,6 +17,7 @@ public final class CacheServiceConst {
 		final String LESSON_TASK = "lesson_task";
 		final String USER_TASK = "user_task";
 		final String LESSON_FAQ = "lesson_faq";
+		final String CHAT_MESSAGE = "chat_message";
 	}
 	
 }
