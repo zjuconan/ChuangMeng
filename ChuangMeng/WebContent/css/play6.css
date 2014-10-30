@@ -155,7 +155,18 @@ display: block;
 #scrollcont .thumb { background:#cc0071; height: 20px; width:5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0; }
 #scrollcont .disable { display: none; }
 .noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
-
+#scrollbar3 {width: 329px;}
+#scrollbar3 .viewport { width: 300px; height: 600px; overflow: hidden; position: relative; }
+#scrollbar3 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar3 .scrollbar{ position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar3 .track { background-color: #ccc; height: 100%; width:5px; position: relative;}
+#scrollbar3 .thumb { background:#cc0071; height: 20px; width:5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0; }
+#scrollbar3 .disable { display: none; }
+#scrollbar4 {margin-right:200px;background: url("../images/newplay_r_bg.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	bottom: 0;
+    height: auto;
+    overflow: hidden;
+    top: 0;}
 .video_mark {
 position: absolute;
 left: 0;
@@ -252,12 +263,14 @@ a:hover {
 .wrap_l .winsize a:hover {
     background-position: -396px 0;
 }
-
+.wrap_l .winsize a.winsize_right {
+    background-position: -427px 0;
+}
 .content_area {
     bottom: 70px;
     height: auto;
     left: 0;
-    padding: 0 20px;
+    padding: 0 10px;
     position: absolute;
     right: 0;
     text-align: center;
@@ -267,7 +280,6 @@ a:hover {
     background-position: 0 top;
     background-repeat: repeat-x;
     height: 200px;
-    margin-left: 20px;
     max-width: 1010px;
     position: relative;
     text-align: left;
@@ -434,9 +446,9 @@ ol, ul, li, dd, dt, dl {
 }
 
 .usertopic_oper .flo_r {
-    float: right;
+    float: left;
     overflow: hidden;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 .usertopic_oper .flo_r a {
     color: #999;
@@ -468,6 +480,7 @@ ol, ul, li, dd, dt, dl {
     padding-left: 13px;
     width: 215px;
 }
+
 .usertopic .usertopic_list li p, .usertopic .usertopic_detail .d_topic p {
     line-height: 20px;
 }
@@ -623,6 +636,10 @@ input, select, textarea {
     color: #8fc223 !important;
     text-decoration: none;
 }
+.nav_active {
+    color: #8fc223 !important;
+    text-decoration: none;
+}
 .nav_l {
     float: left;
     padding: 8px 0 0 20px;
@@ -635,7 +652,11 @@ input, select, textarea {
     line-height: 52px;
     margin-right: 32px;
 }
-
+a:focus{
+	outline:none;}
+a{
+	text-decoration : none;
+}
 .nav_l .logo {
     background: url("../images/newplay_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
