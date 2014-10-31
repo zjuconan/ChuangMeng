@@ -294,6 +294,49 @@
 									</div>
 								</div>
 							</div>
+							<!---- the third row of picture -->
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="row">
+										<div class="col-xs-6">
+											<div class="view view-first">
+													<img alt="" src="img/course1.jpg">
+													<div class="mask">
+														<h2>创业导论</h2>
+														<p>什么是创业，为什么要创业，创业要做什么准备</p>
+														<a href="./cm_play6.html" class="info">了解更多</a>
+													</div>
+											</div>
+										</div>
+										<div class="col-xs-6">
+											<div class="view view-first">
+													<img alt="" src="img/course2.jpg">
+													<div class="mask">
+														<h2>创业导论</h2>
+														<p>什么是创业，为什么要创业，创业要做什么准备</p>
+														<a href="./cm_play6.html" class="info">了解更多</a>
+													</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="col-md-6">	
+									<div class="row" >
+										 <div class="col-md-6">
+											<div class="view view-first">
+													<img alt="" src="img/slide-1.jpg">
+													<div class="mask">
+														<h2>创业导论</h2>
+														<p>什么是创业，为什么要创业，创业要做什么准备</p>
+														<a href="./cm_play6.html" class="info">了解更多</a>
+													</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
 						</div>
 				  </div>
 				  <div class="tab-pane " id="profile" style="min-height:680px;">
