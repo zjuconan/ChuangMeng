@@ -216,7 +216,6 @@ z-index: 1000;
 }
 
 .wrap_l .vidoe_c {
-    height: 946px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -224,12 +223,13 @@ z-index: 1000;
     top: 10px;
 }
 .player{
-	height: 560px;
+	height: 100%;
 }
 .videobox{
 	width:45%;float:left;
 	padding-left:10px;
 	padding-right:10px;
+	height:50%;
 }
 .slide{
 	width:50%; float:right;
@@ -268,13 +268,12 @@ a:hover {
 }
 .content_area {
     bottom: 70px;
-    height: auto;
-    left: 0;
-    padding: 0 10px;
+    float: left;
+    height: 200px;
+    margin-left: 10px;
     position: absolute;
-    right: 0;
     text-align: center;
-      z-index: 200;
+    z-index: 10;
 }
 .content {
     background-position: 0 top;
