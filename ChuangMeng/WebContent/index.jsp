@@ -225,7 +225,7 @@
 									<div class="row">
 										<div class="col-xs-6">
 											<div class="view view-first">
-													<img alt="" src="img/course1.jpg">
+													<img alt="" src="img/course4.jpg">
 													<div class="mask">
 														<h2>创业导论</h2>
 														<p>什么是创业，为什么要创业，创业要做什么准备</p>
@@ -257,7 +257,7 @@
 										</div>
 										<div class="col-md-6">
 											<div class="view view-first">
-													<img alt="" src="img/course4.jpg">
+													<img alt="" src="img/course1.jpg">
 													<div class="mask">
 														<h2>创业导论</h2>
 														<p>什么是创业，为什么要创业，创业要做什么准备</p>
@@ -271,7 +271,7 @@
 									<div class="row" >
 										 <div class="col-md-6">
 											<div class="view view-first">
-													<img alt="" src="img/slide-1.jpg">
+													<img alt="" src="img/course10.jpg">
 													<div class="mask">
 														<h2>创业导论</h2>
 														<p>什么是创业，为什么要创业，创业要做什么准备</p>
@@ -283,7 +283,7 @@
 									<div class="row">
 										 <div class="col-md-6">
 											<div class="view view-first">
-													<img alt="" src="img/pic1.jpg">
+													<img alt="" src="img/course5.jpg">
 													<div class="mask">
 														<h2>创业导论</h2>
 														<p>什么是创业，为什么要创业，创业要做什么准备</p>
@@ -300,7 +300,7 @@
 									<div class="row">
 										<div class="col-xs-6">
 											<div class="view view-first">
-													<img alt="" src="img/course1.jpg">
+													<img alt="" src="img/course7.jpg">
 													<div class="mask">
 														<h2>创业导论</h2>
 														<p>什么是创业，为什么要创业，创业要做什么准备</p>
@@ -310,7 +310,7 @@
 										</div>
 										<div class="col-xs-6">
 											<div class="view view-first">
-													<img alt="" src="img/course2.jpg">
+													<img alt="" src="img/course8.jpg">
 													<div class="mask">
 														<h2>创业导论</h2>
 														<p>什么是创业，为什么要创业，创业要做什么准备</p>
@@ -325,7 +325,7 @@
 									<div class="row" >
 										 <div class="col-md-6">
 											<div class="view view-first">
-													<img alt="" src="img/slide-1.jpg">
+													<img alt="" src="img/course9.jpg">
 													<div class="mask">
 														<h2>创业导论</h2>
 														<p>什么是创业，为什么要创业，创业要做什么准备</p>
