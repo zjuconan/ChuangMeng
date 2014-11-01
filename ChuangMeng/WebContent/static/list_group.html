@@ -13,10 +13,10 @@
     <script src="../js/bootstrap.min.js"></script>
     <title>课程列表</title>
     <style>
-    img {
-        width: 100%;
-        height: auto;
-    }
+        img {
+            width: 100%;
+            height: auto;
+        }
         .course-meta {
             display:  inline-block;
         }
@@ -57,6 +57,7 @@
 
             overflow: hidden;
             position: relative;
+            padding-top : 10px;
         }
 
         .course-detail {
@@ -67,78 +68,190 @@
             background-color: #edeff0;
         }
 
+        @media (min-width: 768px) {
+            .course-img {
+
+                width : 280px;
+
+                padding-top : 2px;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <!-- header part -->
-    <!-- breadcrum part -->
-    <!-- main content -->
-    <div class="outer">
-        <div class="inner">
-            <div class="container">
-                <div class="course-list">
-                    <div class="course row" style="border: 1px solid #e9e9e9;">
-                        <div class="course-img col-xs-12 col-sm-3">
-                            <a href="#">
-                                <img class="img-rounded" src="../img/course/money.png"/> </a>
+<!-- header part -->
+<!-- breadcrum part -->
+<!-- main content -->
+<div class="outer">
+    <div class="inner">
+        <div class="container">
+            <div class="course-list">
+                <div class="course row" style="border: 1px solid #e9e9e9;">
+                    <div class="course-img col-xs-12 col-sm-3">
+                        <a href="#">
+                            <img class="img-rounded" src="../img/course/money.png"/> </a>
+                    </div>
+                    <div class="course-info col-xs-12 col-sm-7">
+                        <a href="#"><h2>创业导论</h2></a>
+                        <div class="course-meta">
+                            <ul>
+                                <li>讲师：<a href="#" title="浙江大学文科资深教授">王重鸣</a></li>
+                                <li>时间：60分钟</li>
+                                <li>好评： 2000</li>
+                                <li>播放：2000</li>
+                                <li>评论： 2000</li>
+                            </ul>
                         </div>
-                        <div class="course-info col-xs-12 col-sm-7">
-                            <a href="#"><h2>创业导论</h2></a>
-                            <div class="course-meta">
-                                <ul>
-                                    <li>讲师：<a href="#" title="浙江大学文科资深教授">王重鸣</a></li>
-                                    <li>时间：60分钟</li>
-                                    <li >好评 : 10000</li>
-                                    <li >播放 :2000</li>
-                                    <li >评论: 2000</li>
-                                </ul>
-                            </div>
-                            <div class="course-tag">
-                                标签：
-                                <ul class="" style="margin: 0;">
-                                    <li ><a href="#">创业态度、、、</a></li>
-                                    <li ><a href="#">创业意识</a></li>
-                                    <li ><a href="#">大学生</a></li>
-                                    <li ><a href="#">初创</a></li>
-                                </ul>
-
-                            </div>
-                            <div class="course-detail">
-                                创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？《创业导论》将一一给你解答。课程的详细信息应该显示在这里，会不会过长呢。如果超过默认的长度， 是不是应该显示一个链接来让用户自己决定是否显示呢？don't make me think？
-                            </div>
-                            <div class="course-share">
-                                <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
-                                <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 hidden-xs">
-                            <ul style="padding :0px; diplay:inline-block;">
-
+                        <div class="course-tag">
+                            标签：
+                            <ul class="" style="margin: 0;">
+                                <li ><a href="#">创业态度</a></li>
+                                <li ><a href="#">创业意识</a></li>
+                                <li ><a href="#">大学生</a></li>
+                                <li ><a href="#">初创</a></li>
                             </ul>
 
                         </div>
-                        <hr/>
-                        <div class="vlist col-sm-12">
-                            <div class="v col-sm-12">
-                                <a class="col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
-                                <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
-                            </div>
-                            <div class="v col-sm-12">
-                                <a class="col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
-                                <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
-                            </div>
-
+                        <div class="course-detail">
+                            创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？《创业导论》将一一给你解答。课程的详细信息应该显示在这里，会不会过长呢。如果超过默认的长度， 是不是应该显示一个链接来让用户自己决定是否显示呢？don't make me think？
+                        </div>
+                        <div class="course-share">
                         </div>
                     </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <ul style="padding :0px; diplay:inline-block;">
 
+                        </ul>
 
+                    </div>
+                    <hr/>
+                    <div class="vlist col-sm-12">
+                        <div class="v col-sm-12">
+                            <a class="course-img col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
+                            <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
+                        </div>
+                        <div class="v col-sm-12">
+                            <a class=" course-img col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
+                            <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
+                        </div>
+
+                    </div>
                 </div>
-                <hr style="width:  100%"/>
+
+
+                <div class="course row" style="border: 1px solid #e9e9e9;">
+                    <div class="course-img col-xs-12 col-sm-3">
+                        <a href="#">
+                            <img class="img-rounded" src="../img/course/money.png"/> </a>
+                    </div>
+                    <div class="course-info col-xs-12 col-sm-7">
+                        <a href="#"><h2>创业导论</h2></a>
+                        <div class="course-meta">
+                            <ul>
+                                <li>讲师：<a href="#" title="浙江大学文科资深教授">王重鸣</a></li>
+                                <li>时间：60分钟</li>
+                                <li>好评： 2000</li>
+                                <li>播放：2000</li>
+                                <li>评论： 2000</li>
+                            </ul>
+                        </div>
+                        <div class="course-tag">
+                            标签：
+                            <ul class="" style="margin: 0;">
+                                <li ><a href="#">创业态度</a></li>
+                                <li ><a href="#">创业意识</a></li>
+                                <li ><a href="#">大学生</a></li>
+                                <li ><a href="#">初创</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="course-detail">
+                            创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？《创业导论》将一一给你解答。课程的详细信息应该显示在这里，会不会过长呢。如果超过默认的长度， 是不是应该显示一个链接来让用户自己决定是否显示呢？don't make me think？
+                        </div>
+                        <div class="course-share">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <ul style="padding :0px; diplay:inline-block;">
+
+                        </ul>
+
+                    </div>
+                    <hr/>
+                    <div class="vlist col-sm-12">
+                        <div class="v col-sm-12">
+                            <a class="course-img col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
+                            <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
+                        </div>
+                        <div class="v col-sm-12">
+                            <a class=" course-img col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
+                            <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="course row" style="border: 1px solid #e9e9e9;">
+                    <div class="course-img col-xs-12 col-sm-3">
+                        <a href="#">
+                            <img class="img-rounded" src="../img/course/money.png"/> </a>
+                    </div>
+                    <div class="course-info col-xs-12 col-sm-7">
+                        <a href="#"><h2>创业导论</h2></a>
+                        <div class="course-meta">
+                            <ul>
+                                <li>讲师：<a href="#" title="浙江大学文科资深教授">王重鸣</a></li>
+                                <li>时间：60分钟</li>
+                                <li>好评： 2000</li>
+                                <li>播放：2000</li>
+                                <li>评论： 2000</li>
+                            </ul>
+                        </div>
+                        <div class="course-tag">
+                            标签：
+                            <ul class="" style="margin: 0;">
+                                <li ><a href="#">创业态度</a></li>
+                                <li ><a href="#">创业意识</a></li>
+                                <li ><a href="#">大学生</a></li>
+                                <li ><a href="#">初创</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="course-detail">
+                            创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？《创业导论》将一一给你解答。课程的详细信息应该显示在这里，会不会过长呢。如果超过默认的长度， 是不是应该显示一个链接来让用户自己决定是否显示呢？don't make me think？
+                        </div>
+                        <div class="course-share">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <ul style="padding :0px; diplay:inline-block;">
+
+                        </ul>
+
+                    </div>
+                    <hr/>
+                    <div class="vlist col-sm-12">
+                        <div class="v col-sm-12">
+                            <a class="course-img col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
+                            <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
+                        </div>
+                        <div class="v col-sm-12">
+                            <a class=" course-img col-xs-12 col-sm-3"><img width="200" height="160" src="../img/course/money.png" class="img-rounded"/> </a>
+                            <div class="vinfo col-xs-12 col-sm-7">一句话概括该视频的内容 点击跳转到播放页面</div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+            <hr style="width:  100%"/>
         </div>
     </div>
+</div>
 
-    <!-- footer part -->
+<!-- footer part -->
 
 </body>
 </html>
