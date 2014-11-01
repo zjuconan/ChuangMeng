@@ -25,6 +25,7 @@ import org.dom4j.Element;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
@@ -35,8 +36,16 @@ import com.cm.logging.CmLogger;
  * To use this cache service transparently, please don't call this service directly except from service layer
  * which cross cut by transaction manager
  */
-public class CacheService implements ApplicationContextAware {
-	
+public class CacheService implements ApplicationContextAware, DisposableBean {
+
+    public void destroy() {
+        this.cacheConfigs.clear();
+        this.cacheLocks.clear();
+        this.cacheStatusMap.clear();
+        this.cacheManager.shutdown();
+        this.executorService.shutdownNow();
+    }
+
 	/** cacheService config file name **/
 	public static final String SERVICE_CONFIG = "cacheService.xml";
 	
