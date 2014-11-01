@@ -7,8 +7,8 @@
   <parent>  
        <groupId>ChuangMengBase</groupId>  
        <artifactId>ChuangMengBase</artifactId>  
-       <version>0.0.1-SNAPSHOT</version>  
-   </parent>  
+       <version>0.0.1-SNAPSHOT</version>
+  </parent>  
     
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -138,4 +138,6 @@
   		<version>2.6.9</version>
   	</dependency>
   </dependencies>
+  
+  
 </project>

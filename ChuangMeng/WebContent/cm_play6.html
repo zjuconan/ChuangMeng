@@ -7,8 +7,9 @@
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/play6.css" rel="stylesheet" />
-<script src="js/jquery-1.11.0.js"></script>
-<script src="js/tinyscrollbar.js"></script>
+<script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+<script src="js/jquery.tinyscrollbar.js" type="text/javascript"></script>
+<script src="js/chat.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -27,7 +28,7 @@
       </h1>
         </div>
 </div>
-			<div class="winsize">
+			<div class="winsize" id="winsize">
 				<a target="_self" href="javascript:void(0)"></a>
 			</div>
 			<div class="vidoe_c">
@@ -36,12 +37,10 @@
 					<div id="imgPreload" style="display: none"></div>
 				</div>
 				<div id="slideContainer" class="slide">
-					<img src="resources/wlf-architecture-road/zh/slides/wlf.1.jpg"
+					<img src="resources/1.png"
 						class="img-responsive img-rounded" />
 				</div>
-			</div>
-
-			<div class="content_area">
+				<div class="content_area">
 				<div class="content">
 					<div class="list_content">
 						<div id="content_kcmul" class="content_div"  style="display:none">
@@ -65,12 +64,34 @@
 							  </div>
 							</div>
 						</div>
-						<div id="content_ktpl" class="content_div" style="display:none"></div>
+						<div id="content_ktpl" class="content_div" style="display:none">
+							<div class="scrollbox" id="scrollbar4">
+								<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+								<div class="viewport">
+									<div class="overview" id="latestlist">
+									<ul  class="usertopic_list">
+									<li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6884476">
+									<img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/76/6884476m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6884476">小吴888</a><i class="v1"></i><span class="launch">发起讨论</span></p><p>不错   不怕没有女朋友了</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(745031);" title="回复">回复(0)</a><span>2014-10-25 10:02:10</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6801396"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/96/6801396m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6801396">骑迹在路上</a><i class="v1"></i><span class="launch">发起讨论</span></p><p>下期什么时候播呀</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(739896);" title="回复">回复(0)</a><span>2014-09-25 23:33:40</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6831635"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/35/6831635m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6831635">南虾123</a><i class="v1"></i><span class="launch">发起讨论</span></p><p>线上变线下的</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(739844);" title="回复">回复(0)</a><span>2014-09-25 17:26:41</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6548648"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/48/6548648m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6548648">zzxrrr</a><i class="v1"></i><span class="launch">发起讨论</span></p><p>这个三三法则是对女性心理一种深刻的把握后总结出的行之有效的一套搭讪的妙方，其实不光是搭讪女人，跟其他陌生人建立起一种信赖的关系这也是一个不错的方法。</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(720333);" title="回复">回复(0)</a><span>2014-08-23 23:20:56</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6669079"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/79/6669079m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6669079">光头翔</a><i class="v23"></i><span class="launch">发起讨论</span></p><p>面对女神的冷漠，看到女神的“呵呵”我们要发大招了！！</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(714979);" title="回复">回复(0)</a><span>2014-08-19 10:20:10</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6496896"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/96/6496896m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6496896">啊魁</a><i class="v23"></i><span class="launch">发起讨论</span></p><p>干货，赞一个！</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(714782);" title="回复">回复(0)</a><span>2014-08-17 20:42:16</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6706706"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/6/6706706m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6706706">分享q123909203</a><i class="v1"></i><span class="launch">发起讨论</span></p><p>1.理清文字聊天目的，不在于确定关系；2.应对不温不火的策略，在于回应有度；3.通过多次粗浅交流，积累安全感。</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(714667);" title="回复">回复(0)</a><span>2014-08-16 15:51:02</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/314111"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/11/314111m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/314111">yangxiongwei</a><i class="v23"></i><span class="launch">发起讨论</span></p><p>适用对象：1搭讪认识的朋友 2，我们在某一个社交网站自然认识的一个不是很熟的朋友.</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(714267);" title="回复">回复(0)</a><span>2014-08-15 08:36:12</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/314111"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/11/314111m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/314111">yangxiongwei</a><i class="v23"></i><span class="launch">发起讨论</span></p><p>三三法则：“句子简短，内容精练”、“点到为止，不要纠缠”、“模糊邀约，表现豁达”、“模糊拒绝，电话跟进”、“获得许可，升级关系”</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(714266);" title="回复">回复(0)</a><span>2014-08-15 08:35:50</span></p></div></li><li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6131479"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/79/6131479m.png"></a><div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6131479">奋豆的奋斗史</a><i class="v23"></i><span class="launch">发起讨论</span></p><p>三三法则只适用于搭讪</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(714242);" title="回复">回复(0)</a><span>2014-08-14 22:13:08</span></p></div></li></ul><p id="latestlist_more" class="viewmore" style="display: block;"><a href="javascript:ThreadUtls.latest(true);">查看更多讨论<em></em></a></p>			
+									</div>
+								</div>
+							</div>
+							<form class="form-inline">
+								<div class="col-sm-9">
+								<input type="text" class="form-control input-sm"  placeholder="Text input"/> 
+								</div>
+								<div class="col-sm-3">
+								 <button type="submit" class="btn btn-default">评论</button>
+								</div>
+							</form>
+						
+						</div>
 						<div id="content_ktbj" class="content_div" style="display:none"></div>
 						<div id="content_ktfaq" class="content_div" style="display:none"></div>
 					</div>
 				</div>
 			</div>
+			</div>
+			
 		</div>
 
 
@@ -81,209 +102,12 @@
 			<div class="wrap_r_w">
 				<div class="coursetitle">
 					<h3>
-						<a href="/ruanqi01.shtml">破解呵呵女神的微信交流法则</a>
+						<a href="/ruanqi01.shtml">李远老师</a>
 					</h3>
-					<p>
-						课程数量：<span>1</span>个
-					</p>
+					
 				</div>
-				<ul class="coursetab">
-					<li class="tabmulu"><a id="" title="目录"
-						href="javascript:void(0);">目&nbsp;&nbsp;录</a></li>
-					<li class="tabtaolun active"><a id="" title="讨论"
-						href="javascript:void(0);">讨&nbsp;&nbsp;论</a></li>
-				</ul>
 
 				<div class="tabbox" id="mulu_div" style="display: none;">
-					<!-- 目录 -->
-					<!-- 目录内容 S -->
-					<div class="scrollbox" id="scrollbar1" style="height: 444px;">
-						<div class="scrollbar" style="height: 0px;">
-							<div class="track" style="height: 0px;">
-								<div class="thumb" style="top: 0px; height: 286px;">
-									<div class="end"></div>
-								</div>
-							</div>
-						</div>
-						<div class="viewport" style="height: 444px;">
-							<div class="overview" style="top: 0px;">
-								<dl class="mululist" style="">
-									<dd id="video_37456" class="active">
-										<a id="video_13081" title="破解呵呵女神的搭讪秘籍"
-											onclick="play_this_video(37456, 1)"
-											href="javascript:void(0);">课时1 破解呵呵女神的搭讪秘籍<span>00:18:44</span></a>
-									</dd>
-								</dl>
-							</div>
-						</div>
-					</div>
-					<!-- 话题小列表 S -->
-					<div class="scrollbox guideTaolun" id="scrollbar2"
-						style="height: 0px; top: 459px;">
-						<div class="scrollbar" style="height: 0px;">
-							<div class="track" style="height: 0px;">
-								<div class="thumb" style="top: 0px; height: 46.8075px;">
-									<div class="end"></div>
-								</div>
-							</div>
-						</div>
-						<div class="viewport" style="height: 0px;">
-							<div class="overview" name="newlist_div" style="top: 0px;">
-								<ul class="usertopic_list" name="newlist_infos" style="">
-									<li><a href="http://v.youmi.cn/profile/6801396"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/96/6801396m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6801396" target="_blank">骑迹在路上</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>下期什么时候播呀</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(739896);"
-													class="reply">回复(0)</a> <span>2014-09-25 23:33:40</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/6831635"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/35/6831635m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6831635" target="_blank">南虾123</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>线上变线下的</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(739844);"
-													class="reply">回复(0)</a> <span>2014-09-25 17:26:41</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/6548648"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/48/6548648m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6548648" target="_blank">zzxrrr</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>这个三三法则是对女性心理一种深刻的把握后总结出的行之有效的一套搭讪的妙方，其实不光是搭讪女人，跟其他陌生人建立起一种信赖的关系这也是一个不错的方法。</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(720333);"
-													class="reply">回复(0)</a> <span>2014-08-23 23:20:56</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/6669079"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/79/6669079m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6669079" target="_blank">光头翔</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>面对女神的冷漠，看到女神的“呵呵”我们要发大招了！！</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(714979);"
-													class="reply">回复(0)</a> <span>2014-08-19 10:20:10</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/6496896"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/96/6496896m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6496896" target="_blank">啊魁</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>干货，赞一个！</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(714782);"
-													class="reply">回复(0)</a> <span>2014-08-17 20:42:16</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/6706706"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/6/6706706m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6706706" target="_blank">分享q123909203</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>1.理清文字聊天目的，不在于确定关系；2.应对不温不火的策略，在于回应有度；3.通过多次粗浅交流，积累安全感。</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(714667);"
-													class="reply">回复(0)</a> <span>2014-08-16 15:51:02</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/314111"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/11/314111m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/314111" target="_blank">yangxiongwei</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>适用对象：1搭讪认识的朋友 2，我们在某一个社交网站自然认识的一个不是很熟的朋友.</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(714267);"
-													class="reply">回复(0)</a> <span>2014-08-15 08:36:12</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/314111"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/11/314111m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/314111" target="_blank">yangxiongwei</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>三三法则：“句子简短，内容精练”、“点到为止，不要纠缠”、“模糊邀约，表现豁达”、“模糊拒绝，电话跟进”、“获得许可，升级关系”</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(714266);"
-													class="reply">回复(0)</a> <span>2014-08-15 08:35:50</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/6131479"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/79/6131479m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6131479" target="_blank">奋豆的奋斗史</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>三三法则只适用于搭讪</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(714242);"
-													class="reply">回复(0)</a> <span>2014-08-14 22:13:08</span>
-											</p>
-										</div></li>
-									<li><a href="http://v.youmi.cn/profile/6131479"
-										target="_blank" title="" class="img_l"><img width="50"
-											height="50" src="http://i2.umivi.net/avatar/79/6131479m.jpg"
-											alt=""></a>
-										<div class="flo_l">
-											<p class="ptitle">
-												<a href="http://v.youmi.cn/profile/6131479" target="_blank">奋豆的奋斗史</a>
-												<i class="v1"></i> <span class="launch">发起讨论</span>
-											</p>
-											<p>三三法则：“句子简短，内容精练”、“点到为止，不要纠缠”、“模糊邀约，表现豁达”、“模糊拒绝，电话跟进”、“获得许可，升级关系”</p>
-											<p class="d_operat">
-												<a title="回复" href="javascript:ReplyUtls.button(714241);"
-													class="reply">回复(0)</a> <span>2014-08-14 22:12:11</span>
-											</p>
-										</div></li>
-								</ul>
-							</div>
-						</div>
-					</div>
 					<!-- 话题小列表 E --->
 					<!-- 目录内容 E -->
 					<div class="godiscuss" style="">
@@ -292,267 +116,46 @@
 				</div>
 
 				<div class="tabbox" id="taolun_div" style="display: block;">
-					<!-- 讨论 -->
-					<div id="usertopic_list">
-						<!-- 话题列表 S -->
-						<input type="hidden" value="1" id="hotpage"> <input
-							type="hidden" value="3" id="latestpage">
-						<div id="tbox1" class="usertopic tbox1" style="height: 525px;">
-							<p class="usertopic_oper">
-								<span class="flo_r"> <a title="最新" name="latestbtn"
-									id="latestbtn" href="javascript:ThreadUtls.latest(false);"
-									class="green">最新</a> <em>|</em> <a title="最热" name="hotbtn"
-									id="hotbtn" href="javascript:ThreadUtls.hot(false);" class="">最热</a>
-								</span>
-							</p>
-							<div class="scrollbox" id="scrollbar3" style="height: 429px;">
-								<div class="scrollbar" style="height: 429px;">
-									<div class="track" style="height: 429px;">
-										<div class="thumb" style="top: 0px; height: 224.44px;">
-											<div class="end"></div>
-										</div>
-									</div>
-								</div>
-								<div class="viewport" style="height: 429px;">
-									<div class="overview" id="latestlist" style="top: 0px;">
-										<ul id="newlist_infos" name="newlist_infos"
-											class="usertopic_list">
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/6686951"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/51/6686951m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank"
-															href="http://v.youmi.cn/profile/6686951">董磊1984</a><i
-															class="v1"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>t说的太好了</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713558);" title="回复">回复(0)</a><span>2014-08-09
-															12:14:00</span>
-													</p>
-												</div></li>
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/6696225"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/25/6696225m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank"
-															href="http://v.youmi.cn/profile/6696225">马上脱光</a><i
-															class="v1"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>微信交流三三法则，一天实践。半天脱光，这人说得太牛了，想要学习的q我 123909203，</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713401);" title="回复">回复(1)</a><span>2014-08-08
-															21:45:29</span>
-													</p>
-												</div></li>
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/6695757"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/57/6695757m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank"
-															href="http://v.youmi.cn/profile/6695757">超群U4</a><i
-															class="v1"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>不错 ( ^_^ )不错嘛</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713356);" title="回复">回复(0)</a><span>2014-08-08
-															20:38:06</span>
-													</p>
-												</div></li>
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/6669079"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/79/6669079m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank"
-															href="http://v.youmi.cn/profile/6669079">光头翔</a><i
-															class="v23"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>“呵呵”是女神的神器，但是我们屌丝有破解的秘笈！！！！同意的顶起啊！！！</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713337);" title="回复">回复(0)</a><span>2014-08-08
-															18:28:55</span>
-													</p>
-												</div></li>
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/637"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/37/637m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank" href="http://v.youmi.cn/profile/637">zhoufeiyan</a><i
-															class="v23"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>原来搭讪还能这样，呵呵</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713317);" title="回复">回复(0)</a><span>2014-08-08
-															17:00:50</span>
-													</p>
-												</div></li>
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/6644969"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/69/6644969m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank"
-															href="http://v.youmi.cn/profile/6644969">大麦芽</a><i
-															class="v23"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>很有意思的课程哇，“呵呵”有破解法了。</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713249);" title="回复">回复(0)</a><span>2014-08-08
-															11:28:25</span>
-													</p>
-												</div></li>
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/180645"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/45/180645m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank" href="http://v.youmi.cn/profile/180645">chengjunjw</a><i
-															class="v23"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>魔鬼咨询师阮琦有内训课程哦</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713244);" title="回复">回复(0)</a><span>2014-08-08
-															10:38:21</span>
-													</p>
-												</div></li>
-											<li class=""><a class="img_l" title="" target="_blank"
-												href="http://v.youmi.cn/profile/6016313"><img width="50"
-													height="50" alt=""
-													src="http://i2.umivi.net/avatar/13/6016313m.jpg"></a>
-											<div class="flo_l">
-													<p class="ptitle">
-														<a target="_blank"
-															href="http://v.youmi.cn/profile/6016313">长江之水来历</a><i
-															class="v23"></i><span class="launch">发起讨论</span>
-													</p>
-													<p>这样的课程太逗了</p>
-													<p class="d_operat">
-														<a class="reply"
-															href="javascript:ReplyUtls.button(713242);" title="回复">回复(0)</a><span>2014-08-08
-															10:04:14</span>
-													</p>
-												</div></li>
-										</ul>
-										<p id="latestlist_more" class="viewmore"
-											style="display: none;">
-											<a href="javascript:ThreadUtls.latest(true);">查看更多讨论<em></em></a>
-										</p>
-									</div>
-								</div>
+					<div class="usertopic_list">
+					<div class="usertopic tbox1">
+					<p class="usertopic_oper">
+						<span class="flo_r">
+							<a title="@我" name="latestbtn" id="latestbtn" href="javascript:ThreadUtls.latest(false);" class="green">@我</a>
+							<em>|</em>
+							<a title="全部" name="hotbtn" id="hotbtn" href="javascript:ThreadUtls.hot(false);" class="">全部</a>
+						</span>
+					</p>
+					
+					<div class="scrollbox" id="scrollbar3">
+						<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+						<div class="viewport">
+							<div class="overview" id="latestlist">
+							<ul id="newlist_infos" name="newlist_infos" class="usertopic_list">
+							<li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6884476"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/76/6884476m.png"></a>
+							<div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6884476">小吴888</a><i class="v1"></i>
+							<span class="launch">发起讨论</span></p><p>不错   不怕没有女朋友了</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(745031);" title="回复">回复(0)</a><span>2014-10-25 10:02:10</span></p></div></li>
+							</ul><p id="latestlist_more" class="viewmore" style="display: block;"><a href="javascript:ThreadUtls.latest(true);">查看更多讨论<em></em></a></p>			
 							</div>
-							<div class="scrollbox" id="scrollbar6"
-								style="height: 429px; display: none;">
-								<div class="scrollbar" style="height: 0px;">
-									<div class="track" style="height: 0px;">
-										<div class="thumb" style="top: 0px; height: 271px;">
-											<div class="end"></div>
-										</div>
-									</div>
-								</div>
-								<div class="viewport" style="height: 429px;">
-									<div class="overview" id="hotlist" style="top: 0px;">
-										<p id="hotlist_more" class="viewmore">
-											<a href="javascript:ThreadUtls.hot(true);">查看更多讨论<em></em></a>
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<!-- 创建话题 S -->
-							<div class="createtopic createtopic1" name="adddes_div"
-								id="adddes_div">
-								<div class="expansion_box">
-									<div class="txtwrap">
-										<textarea id="des_txt" name="des_txt" class="input_text">有疑问，和大家讨论下？</textarea>
-										<span name="send_ok_one" id="send_ok_one"><em>发布成功</em></span>
-										<span name="send_err_one" id="send_err_one" class="fail">错误提示</span>
-										<div class="backgroundColor"></div>
-									</div>
-									<p class="expansion_btn">
-										<input type="button" id="btn_faqitaolun" value=""
-											class="btn_faqitaolun"> <span class="gray3"
-											name="grayinfo" id="grayinfo">还可以输入<em>300</em>字
-										</span> <a class="icon_face" title="" target="_blank" id="a1"></a>
-									</p>
-								</div>
-							</div>
-							<!-- 创建话题 E -->
 						</div>
-						<!-- 话题列表 E ----------------------------------------------------------------------->
-
-						<input type="hidden" value="1" id="replypage">
-						<!-- 话题展开 S ----------------------------------------------------------------------->
-						<div style="display: none; height: 525px;" id="tbox2"
-							class="usertopic tbox2">
-							<p class="usertopic_oper">
-								<span class="flo_r"> <a title="返回更多讨论话题"
-									href="javascript:ReplyUtls.back();" id="topic_more"
-									class="topic_more">返回更多讨论话题</a>
-								</span>
+					</div>
+					
+					</div>
+					</div>
+					<div class="createtopic createtopic1" name="adddes_div" id="adddes_div" style="height: 123px; overflow: visible;" value="1">
+						<div></div>
+						<div class="expansion_box">
+							<div class="txtwrap">
+								<textarea id="des_txt" name="des_txt" class="input_text gray9" style="display: inline-block; height: 64px; overflow: hidden;">有疑问，和大家讨论下？</textarea>
+								<span name="send_ok_one" id="send_ok_one"><em>发布成功</em></span>
+								<span name="send_err_one" id="send_err_one" class="fail">错误提示</span>
+								<div class="backgroundColor"></div>
+							</div>				
+							<p class="expansion_btn">
+								<input type="button" id="btn_faqitaolun" value="" class="btn_faqitaolun" onclick="sendMsg();">
+								<span class="gray3" name="grayinfo" id="grayinfo"><input type="checkbox" id="onlytsee" name="onlytsee" value="y"/>只老师可见</span> 
+								<a class="icon_face" title="" target="_blank" id="a1"></a>
 							</p>
-
-
-							<div id="scrollbar4" class="scrollbox usertopic_detail"
-								style="height: 429px;">
-								<div class="scrollbar" style="height: 0px;">
-									<div class="track" style="height: 0px;">
-										<div class="thumb">
-											<div class="end"></div>
-										</div>
-									</div>
-								</div>
-								<div class="viewport" style="height: 429px;">
-									<div name="adddislist_div" id="adddislist_div" class="overview"
-										style="top: 0px;">
-										<div id="d_topic" class="d_topic"></div>
-										<div id="d_discuss" class="d_discuss"></div>
-									</div>
-								</div>
-							</div>
-							<!-- 回复话题 S -->
-							<div class="createtopic createtopic2" style="">
-								<div class="expansion_box">
-									<div class="txtwrap">
-										<textarea id="des_info_txt" name="des_info_txt"
-											class="input_text"></textarea>
-										<span name="send_ok_two" id="send_ok_two"><em>发布成功</em></span>
-										<span name="send_err_two" id="send_err_two" class="fail">错误提示</span>
-										<div class="backgroundColor"></div>
-									</div>
-									<p class="expansion_btn">
-										<input type="hidden" id="huifuthreadid" value=""> <input
-											type="button" id="btn_huifutaolun" value=""
-											class="btn_huifutaolun"> <span class="gray3"
-											name="grayinfo_dis" id="grayinfo_dis">还可以输入<em>300</em>字
-										</span> <a class="icon_face" title="" target="_blank" id="a3"></a>
-									</p>
-									<!--<input type="hidden" name="atuid" id="atuid" value=""/>-->
-								</div>
-							</div>
-							<!-- 回复话题 E -->
-
-
 						</div>
-						<!-- 话题展开 E --->
 					</div>
 				</div>
 			</div>
@@ -571,13 +174,13 @@
 							target="_self" onclick="changeContent(this);" id="content_jsjs"
 							class="ico_dsjs nav_popup"><span class="glyphicon glyphicon-user"></span> 讲师介绍</a>
 						<a  title="课堂评论"
-							target="_self" href="javascript:void(0)"
+							target="_self" href="javascript:void(0)" id="content_ktpl"
 							class="ico_ktpl nav_popup"><span class="glyphicon glyphicon-edit"></span> 课堂评论</a>
 						<a  title="课堂笔记"
-							target="_self" href="javascript:void(0)"
+							target="_self" href="javascript:void(0)" id="content_ktbj"
 							class="ico_ktbj nav_popup"><span class="glyphicon glyphicon-bookmark"></span> 课堂笔记</a>
 						<a  title="课堂FAQ"
-							target="_self" href="javascript:void(0)"
+							target="_self" href="javascript:void(0)" id="content_ktfaq"
 							class="ico_faq nav_popup"><span class="glyphicon glyphicon-question-sign"></span> 课堂FAQ</a>
 						
 						
@@ -602,73 +205,104 @@
 			</div>
 		</div>
 	</div>
-	<div id="scrollcont" style="display:none;">
-	<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-	<div class="viewport">
-	<div class="overview">
-  <h3>分享：CSS深入理解之float浮动...</h3>
+	<div id="scrollcont" class="sectionlist" style="display:none">
+		<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+		<div class="viewport">
+			 <div class="overview">
+  <h3>案例：PDO—数据库抽象层...</h3>
       <ul class="detaillist ps-container">
                    <li>
-              <span><em></em>第1章 Float的历史-知其历史而更知当下...</span>
-                                              <a href="/video/2660" class="studyvideo">1-1 float的历史(02:39)<b>正在学习</b>                  <i class="do-study"></i>
+              <span><em></em>第1章 PDO简介</span>
+                                              <a href="/video/2866" class="studyvideo">1-1 PDO简介(04:39)<b>正在学习</b>                  <i class="do-study"></i>
                 </a>
-                                                              <a href="/code/2775" class="programme">1-2 浮动的原本作用-文字...                  <i class=""></i>
+                                                              <a href="/video/2883" class="studyvideo">1-2 PDO的配置与启用...(02:04)                  <i class=""></i>
                 </a>
-                                         </li>
-                   <li>
-              <span><em></em>第2章 Float的特性-包裹与破坏</span>
-                                              <a href="/video/2711" class="studyvideo">2-1 包裹与破坏(03:40)                  <i class=""></i>
+                                                              <a href="/video/2891" class="studyvideo">1-3 PDO连接数据库(07:06)                  <i class=""></i>
                 </a>
                                          </li>
                    <li>
-              <span><em></em>第3章 被误解的Float-是魔鬼还是情非得...</span>
-                                              <a href="/video/2761" class="studyvideo">3-1 被误解的浮动(04:16)                  <i class=""></i>
+              <span><em></em>第2章 PDO对象的使用</span>
+                                              <a href="/video/2904" class="studyvideo">2-1 exec()方法执行建表操...(07:04)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/2907" class="studyvideo">2-2 exec()方法执行插入记...(08:51)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/2909" class="studyvideo">2-3 exec()方法执行其他SQ...(06:08)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/2921" class="studyvideo">2-4 errorCode()和errorIn...(05:28)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/2922" class="studyvideo">2-5 query()方法执行查询...(06:48)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/2937" class="studyvideo">2-6 prepare()和execute()...(11:54)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/2990" class="studyvideo">2-7 设置数据库连接属性...(12:52)                  <i class=""></i>
                 </a>
                                          </li>
                    <li>
-              <span><em></em>第4章 清除浮动-究竟是清除浮动还是清...</span>
-                                              <a href="/video/2762" class="studyvideo">4-1 清除浮动(05:10)                  <i class=""></i>
+              <span><em></em>第3章 PDOStatement对象的使用</span>
+                                              <a href="/video/2991" class="studyvideo">3-1 quote()方法防止SQL注...(08:47)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/2778" class="programme">4-2 clear与margin重叠                  <i class=""></i>
+                                                              <a href="/video/2992" class="studyvideo">3-2 预处理语句中的占位符...(06:04)                  <i class=""></i>
                 </a>
-                                         </li>
-                   <li>
-              <span><em></em>第5章 Float的滥用-不在其职而谋其政...</span>
-                                              <a href="/video/2863" class="studyvideo">5-1 浮动的滥用(08:32)                  <i class=""></i>
+                                                              <a href="/video/2993" class="studyvideo">3-3 bindParam()方法绑定...(12:41)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/2864" class="programme">5-2 浮动去空格                  <i class=""></i>
+                                                              <a href="/video/3011" class="studyvideo">3-4 bindValue()方法绑定...(06:12)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/2865" class="programme">5-3 浮动与display:block...                  <i class=""></i>
+                                                              <a href="/video/3013" class="studyvideo">3-5 bindColumn()方法绑定...(07:59)                  <i class=""></i>
                 </a>
-                                         </li>
-                   <li>
-              <span><em></em>第6章 Float与流体布局-我本流体布局生...</span>
-                                              <a href="/video/2886" class="studyvideo">6-1 Float与流体布局(08:08)                  <i class=""></i>
+                                                              <a href="/video/3014" class="studyvideo">3-6 fetchColumn()方法从...(03:27)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/2888" class="programme">6-2 浮动与两侧皆自适应的...                  <i class=""></i>
+                                                              <a href="/video/3015" class="studyvideo">3-7 debugDumpParams()方...(04:49)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/2889" class="programme">6-3 浮动与右侧尺寸固定的...                  <i class=""></i>
-                </a>
-                                                              <a href="/code/2890" class="programme">6-4 浮动与单侧尺寸固定的...                  <i class=""></i>
+                                                              <a href="/video/3016" class="studyvideo">3-8 nextRowset()方法将结...(05:43)                  <i class=""></i>
                 </a>
                                          </li>
                    <li>
-              <span><em></em>第7章 Float与兼容性——不同的老爸不...</span>
-                                              <a href="/video/2887" class="studyvideo">7-1 Float与兼容性(07:39)                  <i class=""></i>
+              <span><em></em>第4章 PDO事务处理</span>
+                                              <a href="/video/3066" class="studyvideo">4-1 PDO错误处理模式...(05:53)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/3192" class="programme">7-2 含clear的浮动元素包...                  <i class=""></i>
+                                                              <a href="/video/3068" class="studyvideo">4-2 PDO事务处理(13:32)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/3194" class="programme">7-3 浮动元素倒数2个莫名...                  <i class=""></i>
+                                         </li>
+                   <li>
+              <span><em></em>第5章 数据库操作类的封装</span>
+                                              <a href="/video/3198" class="studyvideo">5-1 PDO效率剖析(11:48)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/3196" class="programme">7-4 浮动元素倒数2个浮动...                  <i class=""></i>
+                                                              <a href="/video/3199" class="studyvideo">5-2 数据库操作类之构造函...(16:54)                  <i class=""></i>
                 </a>
-                                                              <a href="/code/3197" class="programme">7-5 浮动与同一行的差异...                  <i class=""></i>
+                                                              <a href="/video/3200" class="studyvideo">5-3 数据库操作类之执行SQ...(13:30)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3201" class="studyvideo">5-4 数据库操作类之获取一...(12:31)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3203" class="studyvideo">5-5 数据库操作类之主键查...(13:31)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3206" class="studyvideo">5-6 数据库操作类之条件查...(14:47)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3207" class="studyvideo">5-7 条件查询方法的调试与...(13:02)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3256" class="studyvideo">5-8 数据库操作类之添加记...(07:28)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3257" class="studyvideo">5-9 数据库操作类之更新记...(09:56)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3258" class="studyvideo">5-10 数据库操作类之删除记...(03:13)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3259" class="studyvideo">5-11 数据库操作类之其他操...(05:47)                  <i class=""></i>
+                </a>
+                                         </li>
+                   <li>
+              <span><em></em>第6章 PDO实战</span>
+                                              <a href="/video/3275" class="studyvideo">6-1 项目准备(02:52)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3276" class="studyvideo">6-2 功能实现之发送邮件...(23:16)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3279" class="studyvideo">6-3 功能实现之激活用户...(09:10)                  <i class=""></i>
+                </a>
+                                                              <a href="/video/3281" class="studyvideo">6-4 功能实现之用户登录...(04:45)                  <i class=""></i>
                 </a>
                                          </li>
                </ul>
     </div>
 </div>
-</div>
+			</div>
 	<div id="video_mark" class="video_mark" style="display:none;"></div>
 	<script type="text/javascript" src="ckplayer/ckplayer.js"
 		charset="utf-8"></script>
@@ -679,87 +313,113 @@
 	$(".vidoe_c").height($(window).height()-60);
 	$(".video_mark").height($(window).height());
 	$(".video_mark").width($(window).width());
+	$("#taolun_div").height($(window).height()-105);
+	$("#scrollbar3").height($(window).height()-155);
+	$("div#scrollbar3 .viewport").height($("#scrollbar3").height()-$("#adddes_div").height());
+	$("#scrollbar3").tinyscrollbar({ thumbSize: 50 });
 	$(".nav_popup").click(function(){
 		var id=$(this).attr("id");
+		$(".nav_popup").removeClass("nav_active");
 		$(".content_div").css("display","none");
 		$("#"+id).css("display","block");
+		$(this).addClass("nav_active");
 	});
-	$("#chaptername").click(function(){ alert("test");
+	$("#chaptername").click(function(){ 
 		$(".video_mark").css("display","block");
 		$("#scrollcont").css("display","block");
+		$("#scrollcont").tinyscrollbar({ thumbSize: 50 });
 	});
 	$(".video_mark").click(function(){
 		$(".video_mark").css("display","none");
 		$("#scrollcont").css("display","none");
 	});
-	$('#scrollcont').tinyscrollbar();
+	var rightWidth=$(".wrap_r").width();
+	$("#winsize").click(function(){
+		if($(".wrap_l").css("margin-right")==rightWidth+"px"){
+			$(".wrap_l").animate({"margin-right":0},300,function(){$(".winsize").find("a").addClass("winsize_right");});
+			$(".wrap_r").animate({width:0},300);
+			//videobox.$module.animate({left:videobox.videoX(165)},this.time1);
+			//videobox.$next.animate({left:videobox.videoX(165)},this.time1);
+			//videobox.$h3.animate({left:videobox.videoX(165)},this.time1);
+			//$(".wrap_l").animate({left:videobox.videoX(165)},this.time1);
+		}
+		else
+		{ 
+			$(".wrap_l").animate({"margin-right":rightWidth+"px"},300,function(){$(".winsize").find("a").removeClass("winsize_right");});
+			$(".wrap_r").animate({width:rightWidth+"px"},300);
+			//videobox.$module.animate({left:videobox.videoX(0-165)},this.time1);
+			//videobox.$next.animate({left:videobox.videoX(0-165)},this.time1);
+			//videobox.$h3.animate({left:videobox.videoX(0-165)},this.time1);
+			//$(".wrap_l")ine.animate({left:videobox.videoX(0-165)},300);
+		}
+	});
 		var slides = new Array(
-				'resources/wlf-architecture-road/zh/slides/wlf.1.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.2.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.3.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.4.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.5.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.6.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.7.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.8.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.9.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.10.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.11.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.12.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.13.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.14.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.15.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.16.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.17.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.18.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.19.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.20.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.21.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.22.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.23.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.24.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.25.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.26.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.27.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.28.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.29.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.30.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.31.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.32.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.33.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.34.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.35.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.36.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.37.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.38.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.39.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.40.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.41.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.42.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.43.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.44.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.45.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.46.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.47.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.48.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.49.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.50.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.51.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.52.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.53.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.54.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.55.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.56.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.57.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.58.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.59.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.60.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.61.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.62.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.63.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.64.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.65.jpg',
-				'resources/wlf-architecture-road/zh/slides/wlf.66.jpg'), TIMES = new Array(
+				'resources/1.png',
+				'resources/2.png',
+				'resources/3.png',
+				'resources/4.png',
+				'resources/5.png',
+				'resources/6.png',
+				'resources/7.png',
+				'resources/8.png',
+				'resources/9.png',
+				'resources/10.png',
+				'resources/11.png',
+				'resources/12.png',
+				'resources/13.png',
+				'resources/14.png',
+				'resources/15.png',
+				'resources/16.png',
+				'resources/17.png',
+				'resources/18.png',
+				'resources/19.png',
+				'resources/20.png',
+				'resources/21.png',
+				'resources/22.png',
+				'resources/23.png',
+				'resources/24.png',
+				'resources/25.png',
+				'resources/26.png',
+				'resources/27.png',
+				'resources/28.png',
+				'resources/29.png',
+				'resources/30.png',
+				'resources/31.png',
+				'resources/32.png',
+				'resources/33.png',
+				'resources/34.png',
+				'resources/35.png',
+				'resources/36.png',
+				'resources/37.png',
+				'resources/38.png',
+				'resources/39.png',
+				'resources/40.png',
+				'resources/41.png',
+				'resources/42.png',
+				'resources/43.png',
+				'resources/44.png',
+				'resources/45.png',
+				'resources/46.png',
+				'resources/47.png',
+				'resources/48.png',
+				'resources/49.png',
+				'resources/50.png',
+				'resources/51.png',
+				'resources/52.png',
+				'resources/53.png',
+				'resources/54.png',
+				'resources/55.png',
+				'resources/56.png',
+				'resources/57.png',
+				'resources/58.png',
+				'resources/59.png',
+				'resources/60.png',
+				'resources/61.png',
+				'resources/62.png',
+				'resources/63.png',
+				'resources/64.png',
+				'resources/65.png',
+				'resources/66.png'), TIMES = new Array(
 				0, 40, 80, 90, 100, 130, 150, 160, 170, 180, 190, 210, 230,
 				240, 260, 290, 320, 340, 350, 370, 440, 460, 470, 480, 500,
 				510, 570, 620, 640, 660, 680, 700, 720, 740, 760, 770, 800,
@@ -769,7 +429,7 @@
 		//init('ckplayer_a1');
 
 		var flashvars = {
-			f : 'resources/infoq_1.flv',
+			f : 'resources/01_1.MP4',
 			c : 0,
 			p : 2,
 			o : 138,
@@ -783,7 +443,7 @@
 			allowScriptAccess : 'always',
 			wmode : "transparent"
 		};
-		var video = [ 'resources/infoq_1.mp4->video/mp4' ];
+		var video = [ 'resources/01_1.MP4->video/mp4' ];
 		CKobject.embed('ckplayer/ckplayer.swf', 'playerContainer',
 				'ckplayer_a1', '100%', '100%', false, flashvars, video, params);
 
@@ -810,6 +470,10 @@
 			SlideSynchronizer.setTimes(TIMES);
 			SlideSynchronizer.start();
 		}
+		$(document).ready(function(){
+			startWebSocket();
+		});
+		
 	</script>
 </body>
 </html>

@@ -1,5 +1,13 @@
 target
 build
-.settings/
-.class
+bin/
+.settings/*
+*.class
+
 /target/
+
+.classpath
+.project
+
+classes/
+resources/
