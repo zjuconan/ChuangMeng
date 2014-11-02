@@ -18,11 +18,11 @@ function startWebSocket() {
 	};
 
 	ws.onclose = function(evt) {
-		alert("close");
+		//alert("close");
 	};
 
 	ws.onopen = function(evt) {
-		alert("open");
+		//alert("open");
 	};
 }
 

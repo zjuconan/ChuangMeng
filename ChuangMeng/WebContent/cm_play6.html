@@ -131,9 +131,7 @@
 						<div class="viewport">
 							<div class="overview" id="latestlist">
 							<ul id="newlist_infos" name="newlist_infos" class="usertopic_list">
-							<li class=""><a class="img_l" title="" target="_blank" href="http://v.youmi.cn/profile/6884476"><img width="50" height="50" alt="" src="http://i2.umivi.net/avatar/76/6884476m.png"></a>
-							<div class="flo_l"><p class="ptitle"><a target="_blank" href="http://v.youmi.cn/profile/6884476">小吴888</a><i class="v1"></i>
-							<span class="launch">发起讨论</span></p><p>不错   不怕没有女朋友了</p><p class="d_operat"><a class="reply" href="javascript:ReplyUtls.button(745031);" title="回复">回复(0)</a><span>2014-10-25 10:02:10</span></p></div></li>
+							
 							</ul><p id="latestlist_more" class="viewmore" style="display: block;"><a href="javascript:ThreadUtls.latest(true);">查看更多讨论<em></em></a></p>			
 							</div>
 						</div>
@@ -317,6 +315,8 @@
 	$("#scrollbar3").height($(window).height()-155);
 	$("div#scrollbar3 .viewport").height($("#scrollbar3").height()-$("#adddes_div").height());
 	$("#scrollbar3").tinyscrollbar({ thumbSize: 50 });
+	$(".content_area").width($(".videobox").width());
+	$(".content_area").css("top",$(".videobox").height());
 	$(".nav_popup").click(function(){
 		var id=$(this).attr("id");
 		$(".nav_popup").removeClass("nav_active");
@@ -429,7 +429,7 @@
 		//init('ckplayer_a1');
 
 		var flashvars = {
-			f : 'resources/01_1.MP4',
+			f : 'resources/01_1_1.MP4',
 			c : 0,
 			p : 2,
 			o : 138,
@@ -443,7 +443,7 @@
 			allowScriptAccess : 'always',
 			wmode : "transparent"
 		};
-		var video = [ 'resources/01_1.MP4->video/mp4' ];
+		var video = [ 'resources/01_1_1.MP4->video/mp4' ];
 		CKobject.embed('ckplayer/ckplayer.swf', 'playerContainer',
 				'ckplayer_a1', '100%', '100%', false, flashvars, video, params);
 
@@ -466,7 +466,6 @@
 			}
 		}
 		function playHandler() {
-			alert("start to play");
 			SlideSynchronizer.setTimes(TIMES);
 			SlideSynchronizer.start();
 		}
