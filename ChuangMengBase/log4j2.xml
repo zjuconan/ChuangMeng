@@ -5,7 +5,7 @@
       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
     </Console>
     
-    <RollingFile name="cmFileAppender" fileName="/cm/logs/cm.log" filePattern="/usr/local/cm/logs/archive/$${date:yyyy-MM}/cm-%d{MM-dd-yyyy}-%i.log.gz">
+    <RollingFile name="cmFileAppender" fileName="/usr/local/cm/logs/cm.log" filePattern="/usr/local/cm/logs/archive/$${date:yyyy-MM}/cm-%d{MM-dd-yyyy}-%i.log.gz">
       	<PatternLayout>
         	<Pattern>%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n</Pattern>
       	</PatternLayout>
