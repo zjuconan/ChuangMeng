@@ -3,7 +3,7 @@
   <groupId>ChuangMeng</groupId>
   <artifactId>ChuangMeng</artifactId>
   <packaging>war</packaging>
-  
+   <version>test0.1</version>
   <build>
     <plugins>
       <plugin>
@@ -18,7 +18,7 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>2.4</version>
         <configuration>
-          <failOnMissingWebXml>false</failOnMissingWebXml>
+          <webappDirectory>WebContent</webappDirectory>
         </configuration>
       </plugin>
     </plugins>
@@ -238,6 +238,7 @@
           </exclusions>
   	</dependency>
   </dependencies>
+
 
 
 
