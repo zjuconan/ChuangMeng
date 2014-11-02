@@ -12,8 +12,8 @@
 <!-- data sources for all applications -->
    <bean id="cmDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> 
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/> 
-        <property name="url" value="jdbc:mysql://localhost:3306/cm"></property>
-        <property name="username" value="root"/>
+        <property name="url" value="jdbc:mysql://115.236.71.99:3306/cm"></property>
+        <property name="username" value="cmdba"/>
         <property name="password" value="20142921"/>
         <property name="initialSize" value="10"/>
 		<property name="maxActive" value="50"/>

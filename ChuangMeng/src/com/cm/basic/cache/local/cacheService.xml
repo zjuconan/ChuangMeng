@@ -9,8 +9,8 @@
 
   <cache name="user_basic">
 	  <key class="com.cm.domain.UserBasic" method="getUserId"/>
-	  <loader class="com.cm.dao.table.impl.UserBasicDaoImpl" method="loadAll"/>
-	  <bean id="userBasicDaoImpl"/>
+	  <loader class="com.cm.domain.mapper.UserBasicMapper" method="loadAll"/>
+	  <bean id="userBasicMapper"/>
   </cache>
   
   <cache name="course_type">

@@ -87,9 +87,15 @@ public class CacheService implements ApplicationContextAware {
 	 * @return
 	 */
 	private InputStream loadConfigFromRootPath(String fileName) {
-		InputStream is = CacheService.class.getClassLoader().getResourceAsStream(fileName);
+ 		//InputStream is = CacheService.class.getClassLoader().getResourceAsStream(fileName);
+		InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
+		if(is ==null) is = CacheService.class.getClassLoader().getResourceAsStream(fileName);
+		if(is == null) is = ClassLoader.getSystemResourceAsStream(fileName);
+		java.io.File f = new java.io.File(fileName);
+		System.out.println(f.getAbsolutePath());
 		return is;
 	}
+	
 
 //	private static CacheService instance;	
 //	public static CacheService getInstance() {
@@ -105,7 +111,7 @@ public class CacheService implements ApplicationContextAware {
 	 * mark private to make sure no new instance created in programmer way
 	 */
 	private CacheService () {
-		
+		System.out.println("############################CacheService initialization begin..............");
 		try {
 			InputStream is = loadConfigFromRootPath(EHCACHE_CONFIG);
 			if (is == null) {
@@ -143,7 +149,7 @@ public class CacheService implements ApplicationContextAware {
 	private void loadConfig() throws Exception {
 		InputStream is = loadConfigFromRootPath(SERVICE_CONFIG);
 		if (is == null){
-			CmLogger.getLogger().debug("cache service config " + SERVICE_CONFIG + " found.");
+			CmLogger.getLogger().debug("cache service config " + SERVICE_CONFIG + " not found.");
 			return;
 		}
 		
@@ -245,6 +251,7 @@ public class CacheService implements ApplicationContextAware {
 	 * @return
 	 */
 	private boolean fillCache(Cache cache, CacheConfig cfg, CacheStatus status, ReentrantLock lock) {
+		System.out.println("filling cache [" + cache.getName() + "]......");
 		boolean result = false;
 		try {
 			//refreshCacheInternal(cache, cfg);
@@ -256,7 +263,7 @@ public class CacheService implements ApplicationContextAware {
 					lock,
 					CacheRefreshingTask.ACTION_INIT
 			);
-			
+			System.out.println("filling cache [" + cache.getName() + "]......");
 			CmLogger.getLogger().debug("filling cache [" + cache.getName() + "]......");
 			Future<Boolean> future = executorService.submit(task);
 			if (!asynMode) {
@@ -268,6 +275,8 @@ public class CacheService implements ApplicationContextAware {
 			result = false;
 			CmLogger.getLogger().debug("refresh cache [" + cache.getName() + "] failed.");
 			CmLogger.getLogger().error(e);
+			System.out.println("refresh cache [" + cache.getName() + "]......");
+			e.printStackTrace();
 		}
 		return result;
 		

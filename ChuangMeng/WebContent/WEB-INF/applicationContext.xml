@@ -24,5 +24,35 @@
     
 <!--     <context:component-scan base-package="com.cm.dao.table.impl"/>   -->
 <!--     <context:component-scan base-package="com.cm.dao.business.impl"/>	  -->
+
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	  <property name="dataSource" ref="cmDataSource" />
+	</bean>
 	
+	<!-- define Mybatis SqlSessionFactory -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	  <property name="dataSource" ref="cmDataSource" />
+	  <!-- <property name="configLocation" value="/WEB-INF/cfg/mybatis-config.xml"/>  -->  
+      <property name="mapperLocations" value="classpath:com/cm/domain/**/*Mapper.xml"/>
+	</bean>
+	
+	<!-- define mapper to operate object and DB-->
+	<bean id="userBasicMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		  <property name="mapperInterface" value="com.cm.domain.mapper.UserBasicMapper" />
+		  <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+	 
+	 
+	<!-- scan for mappers and let them be autowired
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.cm.domain.mapper" />
+    </bean> -->
+    
+    <bean class="com.cm.basic.cache.local.CacheService"/>
+	
+	<!-- 使用ehcache缓存 
+	<bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" scope="singleton">  
+	  <property name="configLocation" value="classpath:ehcache.xml" />  
+	</bean>  
+	-->    
 </beans>
