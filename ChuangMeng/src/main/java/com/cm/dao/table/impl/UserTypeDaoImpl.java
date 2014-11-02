@@ -2,7 +2,7 @@ package com.cm.dao.table.impl;
 
 import java.util.List;
 
-import main.java.com.cm.dao.table.UserTypeDao;
+import com.cm.dao.table.UserTypeDao;
 
 public class UserTypeDaoImpl implements UserTypeDao {
 

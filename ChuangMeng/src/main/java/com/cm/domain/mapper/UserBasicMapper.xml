@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cm.domain.mapper.UserBasicMapper">
+
+  <resultMap id="userMapper" type="com.cm.domain.UserBasic">
+        <result property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userPwd" column="user_pwd"/>
+        <result property="nickyName" column="nicky_name"/>
+        <result property="email" column="email"/>
+        <result property="userTypeCd" column="user_Type_Cd"/>
+        <result property="userIconUrl" column="user_Icon_Url"/>
+    </resultMap>
+  
+  <select id="loadAll" resultMap="userMapper">
+    SELECT user_id, user_name, user_pwd, nicky_name,email,user_Type_Cd,user_Icon_Url  FROM user_basic user
+  </select>
+  
+  <select id="getUser" parameterType="int" resultMap="userMapper">
+    SELECT user_id, user_name, user_pwd, nicky_name,email,user_Type_Cd,user_Icon_Url  FROM user_basic user WHERE user.user_id = #{value}
+  </select>
+</mapper>
