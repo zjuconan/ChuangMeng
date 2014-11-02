@@ -2,11 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cm-aggregator</groupId>
   <artifactId>cm-aggregator</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>test0.1</version>
   <packaging>pom</packaging>
   
   <build>
-    <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

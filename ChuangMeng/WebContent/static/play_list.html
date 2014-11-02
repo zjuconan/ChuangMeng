@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/course/static.css" rel="stylesheet">
+
+<!-- jquery slider -->
+<!-- jQuery Version 1.11.0 -->
+<script src="../js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var searchFn = function(value) {
+			$.ajax({
+				type: "POST",
+				url: "/course/ajaxSearch.shtml?action=search",
+				dataType:"json",
+				data: {
+					search_title : value
+				},
+				success: function(res){
+					
+					
+				},
+				failure: function(res) {}
+				
+			});
+			
+		}
+		$('.js-search').click(function() {
+			// 1. 
+			
+			
+		});
+		
+	}) ;
+</script>
+
+<title>课程列表</title>
+
+<style>
+#main {
+	background-color: #edeff0;
+}
+
+.container {
+	width: 1260px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.course-sidebar {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+.course-content {
+	float: right;
+}
+.page {
+	float: right;
+	margin-right: 20px;
+}
+</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner">
+			<div class="container">
+				<div class="course-sidebar">
+					<div class="course-sidebar-type">
+						<div class="course-sidebar-search">
+							<input type="text" class="js-keyword" placeholder="课程搜索">
+							<a href="javascript:void(0)" class="btn_search js-search focus"></a>
+							<ul class="course-sidebar-result" style="display: none;"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="course-content">
+					<div class="course-tools">
+						<h2>全部课程</h2>
+					</div>
+					<div class="course-list" style="margin-top: 0px;">
+						<div class="js-course-list">
+							<ul>
+								<li><a href="#">
+										<div class="course-list-img">
+											<img width="280" height="160" alt="PDO—数据库抽象层"
+												src="../img/course/money.png">
+										</div>
+										<h5>
+											<span class="topicon">创业导论</span>
+										</h5>
+
+										<div class="intro">
+											<p>创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？</p>
+											<span class="l">教授：王重鸣</span> <span class="r"></span>
+										</div>
+
+										<div class="tips">
+											<span class="l">时长：1小时30分</span> <span class="r">3000人学习</span>
+										</div>
+								</a></li>
+								<li><a href="#">
+										<div class="course-list-img">
+											<img width="280" height="160" alt="PDO—数据库抽象层"
+												src="../img/course/money.png">
+										</div>
+										<h5>
+											<span class="topicon">创业导论</span>
+										</h5>
+
+										<div class="intro">
+											<p>创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？</p>
+											<span class="l">教授：王重鸣</span> <span class="r"></span>
+										</div>
+
+										<div class="tips">
+											<span class="l">时长：1小时30分</span> <span class="r">3000人学习</span>
+										</div>
+								</a></li>
+								<li><a href="#">
+										<div class="course-list-img">
+											<img width="280" height="160" alt="PDO—数据库抽象层"
+												src="../img/course/money.png">
+										</div>
+										<h5>
+											<span class="topicon">创业导论</span>
+										</h5>
+
+										<div class="intro">
+											<p>创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？</p>
+											<span class="l">教授：王重鸣</span> <span class="r"></span>
+										</div>
+
+										<div class="tips">
+											<span class="l">时长：1小时30分</span> <span class="r">3000人学习</span>
+										</div>
+								</a></li>
+								<li><a href="#">
+										<div class="course-list-img">
+											<img width="280" height="160" alt="PDO—数据库抽象层"
+												src="../img/course/money.png">
+										</div>
+										<h5>
+											<span class="topicon">创业导论</span>
+										</h5>
+
+										<div class="intro">
+											<p>创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？</p>
+											<span class="l">教授：王重鸣</span> <span class="r"></span>
+										</div>
+
+										<div class="tips">
+											<span class="l">时长：1小时30分</span> <span class="r">3000人学习</span>
+										</div>
+								</a></li>
+								<li><a href="#">
+										<div class="course-list-img">
+											<img width="280" height="160" alt="PDO—数据库抽象层"
+												src="../img/course/money.png">
+										</div>
+										<h5>
+											<span class="topicon">创业导论</span>
+										</h5>
+
+										<div class="intro">
+											<p>创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？</p>
+											<span class="l">教授：王重鸣</span> <span class="r"></span>
+										</div>
+
+										<div class="tips">
+											<span class="l">时长：1小时30分</span> <span class="r">3000人学习</span>
+										</div>
+								</a></li>
+								<li><a href="#">
+										<div class="course-list-img">
+											<img width="280" height="160" alt="PDO—数据库抽象层"
+												src="../img/course/money.png">
+										</div>
+										<h5>
+											<span class="topicon">创业导论</span>
+										</h5>
+
+										<div class="intro">
+											<p>创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？</p>
+											<span class="l">教授：王重鸣</span> <span class="r"></span>
+										</div>
+
+										<div class="tips">
+											<span class="l">时长：1小时30分</span> <span class="r">3000人学习</span>
+										</div>
+								</a></li>
+								<li><a href="#">
+										<div class="course-list-img">
+											<img width="280" height="160" alt="PDO—数据库抽象层"
+												src="../img/course/money.png">
+										</div>
+										<h5>
+											<span class="topicon">创业导论</span>
+										</h5>
+
+										<div class="intro">
+											<p>创业并非易事，需要天时地利人和。那么，究竟什么是创业最关键的成功要素，怎么样的创业机会才值得开发？</p>
+											<span class="l">教授：王重鸣</span> <span class="r"></span>
+										</div>
+
+										<div class="tips">
+											<span class="l">时长：1小时30分</span> <span class="r">3000人学习</span>
+										</div>
+								</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="page">
+					<ul class="pagination">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

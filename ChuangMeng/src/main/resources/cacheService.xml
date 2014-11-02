@@ -91,3 +91,4 @@
 	  <bean id="ChatMessageDaoImpl"/>
   </cache>              
 </cacheService>
+

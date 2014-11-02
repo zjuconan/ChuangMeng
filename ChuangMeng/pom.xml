@@ -8,8 +8,8 @@
        <groupId>ChuangMengBase</groupId>  
        <artifactId>ChuangMengBase</artifactId>  
        <version>0.0.1-SNAPSHOT</version>
-  </parent>  
-    
+  </parent>
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -25,18 +25,46 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>2.4</version>
         <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
     </plugins>
   </build>
-  
+
   <properties>
   	<spring.version>4.1.1.RELEASE</spring.version>
+    <junit.version>4.10</junit.version>
+    <mockito.version>1.9.5</mockito.version>
+    <powermock.version>1.4.12</powermock.version>
   </properties>
-  
+
   <dependencies>
+      <dependency>
+          <groupId>org.codehaus.jackson</groupId>
+          <artifactId>jackson-mapper-asl</artifactId>
+          <version>1.4.2</version>
+      </dependency>
+      <dependency>
+          <groupId>org.codehaus.jackson</groupId>
+          <artifactId>jackson-core-asl</artifactId>
+          <version>1.4.2</version>
+      </dependency>
+      <dependency>
+          <groupId>ChuangMengBase</groupId>
+          <artifactId>ChuangMengBase</artifactId>
+          <version>test0.1</version>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.0.1</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>javax.websocket</groupId>
+          <artifactId>javax.websocket-api</artifactId>
+          <version>1.1</version>
+      </dependency>
   	<dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-aop</artifactId>
@@ -132,7 +160,6 @@
   		<artifactId>dom4j</artifactId>
   		<version>1.6.1</version>
   	</dependency>
-  	
   	<dependency>
 		<groupId>org.mybatis</groupId>
 		<artifactId>mybatis</artifactId>
@@ -173,5 +200,41 @@
 		<artifactId>jaxen</artifactId>
 		<version>1.1.1</version>
 	</dependency>
+
+      <!-- junit -->
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>${junit.version}</version>
+          <scope>test</scope>
+      </dependency>
+      <!-- mockito -->
+      <dependency>
+          <groupId>org.mockito</groupId>
+          <artifactId>mockito-all</artifactId>
+          <version>${mockito.version}</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.powermock</groupId>
+          <artifactId>powermock-module-junit4</artifactId>
+          <version>${powermock.version}</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.powermock</groupId>
+          <artifactId>powermock-api-mockito</artifactId>
+          <version>${powermock.version}</version>
+          <scope>test</scope>
+          <exclusions>
+              <exclusion>
+                  <groupId>org.mockito</groupId>
+                  <artifactId>mockito-all</artifactId>
+              </exclusion>
+          </exclusions>
+  	</dependency>
   </dependencies>
+
+
+
 </project>
